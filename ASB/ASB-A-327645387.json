@@ -1,0 +1,58 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-327645387",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2024-10-01T00:00:00Z",
+	"aliases": [
+		"A-327645387",
+		"CVE-2024-40672"
+	],
+	"details": "In onCreate of ChooserActivity.java, there is a possible way to bypass factory reset protections due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/IntentResolver"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/IntentResolver/+/5c9c3a7462dc45907ee30516f43aff68ada3d06d"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327645387.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-10-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/IntentResolver/+/ccd29124d0d2276a3071c0418c14dec188cd3727"
+		}
+	]
+}

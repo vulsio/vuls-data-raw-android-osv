@@ -1,0 +1,86 @@
+{
+	"schema_version": "1.6.0",
+	"id": "PUB-A-266700762",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2023-06-01T00:00:00Z",
+	"aliases": [
+		"A-266700762",
+		"CVE-2023-21185"
+	],
+	"details": "In multiple functions of WifiNetworkFactory.java, there is a missing permission check. This could lead to local escalation of privilege from the guest user with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Wifi"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13-next:0"
+						},
+						{
+							"fixed": "13-next:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Wifi/+/61aed07783d93b2a3cbeb2a1a0f40c560bd14b2b"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "239135965997494739458696623849500405979",
+							"length": 2207
+						},
+						"id": "PUB-A-266700762-7103ca74",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61aed07783d93b2a3cbeb2a1a0f40c560bd14b2b",
+						"target": {
+							"file": "service/java/com/android/server/wifi/WifiNetworkFactory.java",
+							"function": "needNetworkFor"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "311661579839707545632783702909289347180",
+							"length": 1860
+						},
+						"id": "PUB-A-266700762-f2bf2ae0",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61aed07783d93b2a3cbeb2a1a0f40c560bd14b2b",
+						"target": {
+							"file": "service/java/com/android/server/wifi/WifiNetworkFactory.java",
+							"function": "acceptRequest"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-266700762.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2023-06-01"
+		}
+	]
+}

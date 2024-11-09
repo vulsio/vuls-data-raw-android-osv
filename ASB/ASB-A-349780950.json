@@ -1,0 +1,408 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-349780950",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2024-10-01T00:00:00Z",
+	"aliases": [
+		"A-349780950",
+		"CVE-2024-40676"
+	],
+	"details": "In checkKeyIntent of AccountManagerService.java, there is a possible way to bypass intent security check and install an unknown app due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"143340558747185809380254933061325026984",
+								"257534514749571527937948510657640349511",
+								"159278642280672671660071288836292656749",
+								"134396200308248142750079451699159448350"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-349780950-579620f0",
+						"match_only_versions": [
+							"12"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "309758229606791001181744265417467531376",
+							"length": 1137
+						},
+						"id": "ASB-A-349780950-c6f5d579",
+						"match_only_versions": [
+							"12"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+							"function": "checkKeyIntent"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-349780950.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"143340558747185809380254933061325026984",
+								"257534514749571527937948510657640349511",
+								"159278642280672671660071288836292656749",
+								"134396200308248142750079451699159448350"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-349780950-519ea0e3",
+						"match_only_versions": [
+							"12L"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "309758229606791001181744265417467531376",
+							"length": 1137
+						},
+						"id": "ASB-A-349780950-c0f39ea3",
+						"match_only_versions": [
+							"12L"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+							"function": "checkKeyIntent"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-349780950.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "309758229606791001181744265417467531376",
+							"length": 1137
+						},
+						"id": "ASB-A-349780950-7f8fff7a",
+						"match_only_versions": [
+							"15"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+							"function": "checkKeyIntent"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"143340558747185809380254933061325026984",
+								"257534514749571527937948510657640349511",
+								"159278642280672671660071288836292656749",
+								"134396200308248142750079451699159448350"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-349780950-d731d986",
+						"match_only_versions": [
+							"15"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-349780950.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"143340558747185809380254933061325026984",
+								"257534514749571527937948510657640349511",
+								"159278642280672671660071288836292656749",
+								"134396200308248142750079451699159448350"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-349780950-95642981",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "309758229606791001181744265417467531376",
+							"length": 1137
+						},
+						"id": "ASB-A-349780950-f87363ce",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+							"function": "checkKeyIntent"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-349780950.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "309758229606791001181744265417467531376",
+							"length": 1137
+						},
+						"id": "ASB-A-349780950-5443008f",
+						"match_only_versions": [
+							"14"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+							"function": "checkKeyIntent"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"143340558747185809380254933061325026984",
+								"257534514749571527937948510657640349511",
+								"159278642280672671660071288836292656749",
+								"134396200308248142750079451699159448350"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-349780950-653c2cbf",
+						"match_only_versions": [
+							"14"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473",
+						"target": {
+							"file": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-349780950.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-10-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/frameworks/base/+/e8a53246607b52b15269f97aef9ba7e928ba2473"
+		}
+	]
+}

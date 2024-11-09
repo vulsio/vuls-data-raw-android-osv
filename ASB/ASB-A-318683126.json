@@ -1,0 +1,97 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-318683126",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2024-10-01T00:00:00Z",
+	"aliases": [
+		"A-318683126",
+		"CVE-2024-40675"
+	],
+	"details": "In parseUriInternal of Intent.java, there is a possible infinite loop due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/b85bee508793e31d6fe37fc9cd4e8fa3787113cc"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "261944950087865414125614689859059659546",
+							"length": 5004
+						},
+						"id": "ASB-A-318683126-01752538",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b85bee508793e31d6fe37fc9cd4e8fa3787113cc",
+						"target": {
+							"file": "core/java/android/content/Intent.java",
+							"function": "parseUriInternal"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"318946998413846104282310968335173811325",
+								"199411611476638331040452521079256241090",
+								"218203338882426500715760159920212879013",
+								"46135789642667038505340636724979197534"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-318683126-2821c5da",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b85bee508793e31d6fe37fc9cd4e8fa3787113cc",
+						"target": {
+							"file": "core/java/android/content/Intent.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-318683126.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-10-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/frameworks/base/+/c6b5490ec659b5854fd429f453f75de5befa6359"
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-327749022",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2024-09-01T00:00:00Z",
+	"aliases": [
+		"A-327749022",
+		"CVE-2024-40652"
+	],
+	"details": "In onCreate of SettingsHomepageActivity.java, there is a possible way to access the Settings app while the device is provisioning due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/70a5a0fd353cc6203d2926627de93786155ae5bc"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"19362163005515750643544123919388329013",
+								"290741224690397986418975891065267248161",
+								"219738665414340179411321010363753811153"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327749022-22ccafea",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/70a5a0fd353cc6203d2926627de93786155ae5bc",
+						"target": {
+							"file": "src/com/android/settings/homepage/SettingsHomepageActivity.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "238781758302158020989358110392753045614",
+							"length": 2115
+						},
+						"id": "ASB-A-327749022-569b2683",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/70a5a0fd353cc6203d2926627de93786155ae5bc",
+						"target": {
+							"file": "src/com/android/settings/homepage/SettingsHomepageActivity.java",
+							"function": "onCreate"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327749022.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-09-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/apps/Settings/+/2909433f7d59dcdd0c74044b1c8e9f48927193dc"
+		}
+	]
+}

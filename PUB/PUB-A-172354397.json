@@ -1,0 +1,51 @@
+{
+	"schema_version": "1.6.0",
+	"id": "PUB-A-172354397",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2021-05-01T00:00:00Z",
+	"aliases": [
+		"2740910",
+		"A-172354397",
+		"CVE-2020-11254"
+	],
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": ":unknown:"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "SoCVersion:0"
+						},
+						{
+							"fixed": "SoCVersion:2021-05-05"
+						}
+					]
+				}
+			],
+			"versions": [
+				"SoCVersion"
+			],
+			"ecosystem_specific": {
+				"severity": "Moderate",
+				"spl": "2021-05-05",
+				"types": [
+					"Unknown"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-172354397.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2021-05-01"
+		}
+	]
+}

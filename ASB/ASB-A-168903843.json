@@ -1,0 +1,221 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-168903843",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2023-11-01T00:00:00Z",
+	"aliases": [
+		"A-168903843",
+		"CVE-2023-40112"
+	],
+	"details": "In ippSetValueTag of ipp.c, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure of past print jobs or other print-related information, with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/libcups"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "11:0"
+						},
+						{
+							"fixed": "11:2023-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"11"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/libcups/+/c56dfec131379d6ad0967503a3dab26e1529d3dd",
+					"https://android.googlesource.com/platform/external/libcups/+/5dc9169996bece383ff2935e338f381913dc183b"
+				],
+				"severity": "High",
+				"spl": "2023-11-01",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-168903843.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/BuiltInPrintService"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "11:0"
+						},
+						{
+							"fixed": "11:2023-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"11"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526"
+				],
+				"severity": "High",
+				"spl": "2023-11-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "208908541234022284624100531514337325684",
+							"length": 1059
+						},
+						"id": "ASB-A-168903843-19554650",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526",
+						"target": {
+							"file": "jni/ipphelper/ipphelper.c",
+							"function": "ipp_cups_connect"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "269062204594514788065696016114249760109",
+							"length": 607
+						},
+						"id": "ASB-A-168903843-341aa243",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526",
+						"target": {
+							"file": "jni/ipphelper/ipphelper.c",
+							"function": "ippSendRequest"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"121841922422821634891644421617462246845",
+								"174647121699483139695830162332183851336",
+								"70205060180202351475742412994001880203",
+								"80783095156085154200111509718869578118",
+								"175809230290423591156565326244498498478",
+								"101457942480887745340045271152667832669",
+								"195007001531869849702670904799535689371",
+								"109239415881854319845481272749576884712",
+								"284115725153669263417790635072285326917",
+								"8200596218202304879321704466935497331",
+								"95853812027073571831033431326958752555",
+								"220376860414487512869001128441374112906",
+								"41061620296125049090650583377552755795",
+								"6368362472393028093489014113760184968",
+								"137636727070988564348968079198029729781",
+								"33389502629777811548589297080432372657",
+								"40615064232654873124315417879282693571",
+								"185999241522490597289635439754871331684"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-168903843-544a5b82",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526",
+						"target": {
+							"file": "jni/ipphelper/ipphelper.c"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"74083178827159764424559278811865206118",
+								"268787358437157662698257242904396897076",
+								"331438520497111928643580768855050928183",
+								"322051738068498332997146734300850847828",
+								"108970055851000078248958388594845941807",
+								"20762511052862861924161941175142160409",
+								"157180606990651114987859639820191497487",
+								"151147799178686485981347637909813104844",
+								"258771543095798613788880454975820898369",
+								"197193703297881138390481729150984519131",
+								"150659595122998533088600898705829636364",
+								"256834437576828961255536536730863288693",
+								"212865919487125351899738350059275282634",
+								"159157273108908459099927568126125312010",
+								"85636628087925622162138427933931158559",
+								"42736056769197146402111345548795351391",
+								"214005797723658209665585891064354233609"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-168903843-5a9af5a1",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526",
+						"target": {
+							"file": "jni/ipphelper/ipp_print.c"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "125688700561513453144088291867387407339",
+							"length": 1298
+						},
+						"id": "ASB-A-168903843-7333795d",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526",
+						"target": {
+							"file": "jni/ipphelper/ipp_print.c",
+							"function": "_start_job"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "29701596371237702473176779634240767410",
+							"length": 1080
+						},
+						"id": "ASB-A-168903843-f01e5a3c",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/78aedf410610768bdfd8f6c87a704e82a4fd1526",
+						"target": {
+							"file": "jni/ipphelper/ipp_print.c",
+							"function": "_init"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-168903843.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2023-11-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/d7cb53cb5b47f4afdb84cb0e161d84fdc2c32ce7"
+		}
+	]
+}

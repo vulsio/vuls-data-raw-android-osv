@@ -1,0 +1,94 @@
+{
+	"schema_version": "1.6.0",
+	"id": "PUB-A-197749180",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2021-12-01T00:00:00Z",
+	"aliases": [
+		"A-197749180",
+		"CVE-2021-1004"
+	],
+	"details": "In getConfiguredNetworks of WifiServiceImpl.java, there is a possible way to determine whether an app is installed, without query permissions, due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Wifi"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2021-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Wifi/+/bd8881739d3a318cad4e2bef60b03547dd14715c"
+				],
+				"severity": "Moderate",
+				"spl": "2021-12-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "334648985680967749890802445307058064647",
+							"length": 1880
+						},
+						"id": "PUB-A-197749180-3f2dbe3d",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/bd8881739d3a318cad4e2bef60b03547dd14715c",
+						"target": {
+							"file": "service/java/com/android/server/wifi/WifiServiceImpl.java",
+							"function": "getConfiguredNetworks"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"242625264923287647758179166497465093176",
+								"44977527038889901187066130860769944062",
+								"101914245691445740562944914213089121830",
+								"97051022933864093902631334303086124073"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-197749180-8dbf5092",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/bd8881739d3a318cad4e2bef60b03547dd14715c",
+						"target": {
+							"file": "service/java/com/android/server/wifi/WifiServiceImpl.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-197749180.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2021-12-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Wifi/+/bd8881739d3a318cad4e2bef60b03547dd14715c"
+		}
+	]
+}

@@ -1,0 +1,407 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-341680936",
+	"modified": "2024-11-06T16:12:12.639757Z",
+	"published": "2024-11-01T00:00:00Z",
+	"aliases": [
+		"A-341680936",
+		"CVE-2024-43093"
+	],
+	"details": "In shouldHideDocument of ExternalStorageProvider.java, there is a possible bypass of a file path filter designed to prevent access to sensitive directories due to  incorrect unicode normalization. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed"
+				],
+				"severity": "High",
+				"spl": "2024-11-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"82383509994944209197550046869742228831",
+								"92736127983341831571401450139155350602",
+								"11178458602711922477761236377671491738",
+								"218593904282397687475559102996718449354",
+								"163959190879765981841303926269514662985",
+								"229395446405442564238235676967819175315",
+								"69872619935661865626078323738185575240",
+								"176760729794269842001035921457772591482",
+								"180111467092620191187509636909841449915",
+								"231554190964722082970558902036937057288",
+								"209123422967229645531423107889931090188",
+								"224765289385384294407017732659433291177",
+								"17687126784026348192855174961885991782",
+								"189531952909343160028141470373618825497",
+								"244758599954022578569552642200938371143",
+								"243445143413923747903612479158629299082",
+								"229312143133866111910960041947068522991",
+								"223098270538101092763464501278079255337",
+								"177850502028062498000214868692648001981",
+								"25034569560734105328920507087347052786",
+								"53072638448672322689479527507176646283",
+								"111586911541459156417573305324852249917",
+								"332800826803127257022304227152783767803"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-341680936-1a058769",
+						"match_only_versions": [
+							"12"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "297717396204470872634311050904808164171",
+							"length": 207
+						},
+						"id": "ASB-A-341680936-23a0b25c",
+						"match_only_versions": [
+							"12"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+							"function": "shouldHideDocument"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-341680936.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2024-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed"
+				],
+				"severity": "High",
+				"spl": "2024-11-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "297717396204470872634311050904808164171",
+							"length": 207
+						},
+						"id": "ASB-A-341680936-7ec838ea",
+						"match_only_versions": [
+							"15"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+							"function": "shouldHideDocument"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"82383509994944209197550046869742228831",
+								"92736127983341831571401450139155350602",
+								"11178458602711922477761236377671491738",
+								"218593904282397687475559102996718449354",
+								"163959190879765981841303926269514662985",
+								"229395446405442564238235676967819175315",
+								"69872619935661865626078323738185575240",
+								"176760729794269842001035921457772591482",
+								"180111467092620191187509636909841449915",
+								"231554190964722082970558902036937057288",
+								"209123422967229645531423107889931090188",
+								"224765289385384294407017732659433291177",
+								"17687126784026348192855174961885991782",
+								"189531952909343160028141470373618825497",
+								"244758599954022578569552642200938371143",
+								"243445143413923747903612479158629299082",
+								"229312143133866111910960041947068522991",
+								"223098270538101092763464501278079255337",
+								"177850502028062498000214868692648001981",
+								"25034569560734105328920507087347052786",
+								"53072638448672322689479527507176646283",
+								"111586911541459156417573305324852249917",
+								"332800826803127257022304227152783767803"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-341680936-8036e276",
+						"match_only_versions": [
+							"15"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-341680936.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed"
+				],
+				"severity": "High",
+				"spl": "2024-11-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "297717396204470872634311050904808164171",
+							"length": 207
+						},
+						"id": "ASB-A-341680936-1d03413f",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+							"function": "shouldHideDocument"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"82383509994944209197550046869742228831",
+								"92736127983341831571401450139155350602",
+								"11178458602711922477761236377671491738",
+								"218593904282397687475559102996718449354",
+								"163959190879765981841303926269514662985",
+								"229395446405442564238235676967819175315",
+								"69872619935661865626078323738185575240",
+								"176760729794269842001035921457772591482",
+								"180111467092620191187509636909841449915",
+								"231554190964722082970558902036937057288",
+								"209123422967229645531423107889931090188",
+								"224765289385384294407017732659433291177",
+								"17687126784026348192855174961885991782",
+								"189531952909343160028141470373618825497",
+								"244758599954022578569552642200938371143",
+								"243445143413923747903612479158629299082",
+								"229312143133866111910960041947068522991",
+								"223098270538101092763464501278079255337",
+								"177850502028062498000214868692648001981",
+								"25034569560734105328920507087347052786",
+								"53072638448672322689479527507176646283",
+								"111586911541459156417573305324852249917",
+								"332800826803127257022304227152783767803"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-341680936-adeb7163",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-341680936.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed"
+				],
+				"severity": "High",
+				"spl": "2024-11-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"82383509994944209197550046869742228831",
+								"92736127983341831571401450139155350602",
+								"11178458602711922477761236377671491738",
+								"218593904282397687475559102996718449354",
+								"163959190879765981841303926269514662985",
+								"229395446405442564238235676967819175315",
+								"69872619935661865626078323738185575240",
+								"176760729794269842001035921457772591482",
+								"180111467092620191187509636909841449915",
+								"231554190964722082970558902036937057288",
+								"209123422967229645531423107889931090188",
+								"224765289385384294407017732659433291177",
+								"17687126784026348192855174961885991782",
+								"189531952909343160028141470373618825497",
+								"244758599954022578569552642200938371143",
+								"243445143413923747903612479158629299082",
+								"229312143133866111910960041947068522991",
+								"223098270538101092763464501278079255337",
+								"177850502028062498000214868692648001981",
+								"25034569560734105328920507087347052786",
+								"53072638448672322689479527507176646283",
+								"111586911541459156417573305324852249917",
+								"332800826803127257022304227152783767803"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-341680936-154ad7cf",
+						"match_only_versions": [
+							"14"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "297717396204470872634311050904808164171",
+							"length": 207
+						},
+						"id": "ASB-A-341680936-a4203989",
+						"match_only_versions": [
+							"14"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed",
+						"target": {
+							"file": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+							"function": "shouldHideDocument"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-341680936.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-11-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/frameworks/base/+/67d6e08322019f7ed8e3f80bd6cd16f8bcb809ed"
+		}
+	]
+}

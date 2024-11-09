@@ -1,0 +1,54 @@
+{
+	"schema_version": "1.6.0",
+	"id": "PUB-A-261365944",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2023-06-01T00:00:00Z",
+	"aliases": [
+		"A-261365944",
+		"CVE-2023-21180"
+	],
+	"details": "In xmlParseTryOrFinish of parser.c, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/libxml2"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13-next:0"
+						},
+						{
+							"fixed": "13-next:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/libxml2/+/38b5bb8f7920334ff401fa52fcd0f9a637edbce5"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-261365944.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2023-06-01"
+		}
+	]
+}

@@ -1,0 +1,303 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-327748846",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2024-10-01T00:00:00Z",
+	"aliases": [
+		"A-327748846",
+		"CVE-2024-40677"
+	],
+	"details": "In shouldSkipForInitialSUW of AdvancedPowerUsageDetail.java, there is a possible way to bypass factory reset protections due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"216696167709512814950446931344415427527",
+								"242069008596781188726167804369143583846",
+								"61098438079244257226418625646337190060",
+								"131261859173897395205462984993103168164"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327748846-563d7d6c",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb",
+						"target": {
+							"file": "src/com/android/settings/fuelgauge/AdvancedPowerUsageDetail.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327748846.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"216696167709512814950446931344415427527",
+								"242069008596781188726167804369143583846",
+								"61098438079244257226418625646337190060",
+								"131261859173897395205462984993103168164"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327748846-01a0df5d",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb",
+						"target": {
+							"file": "src/com/android/settings/fuelgauge/AdvancedPowerUsageDetail.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327748846.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"216696167709512814950446931344415427527",
+								"242069008596781188726167804369143583846",
+								"61098438079244257226418625646337190060",
+								"131261859173897395205462984993103168164"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327748846-d0b80036",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb",
+						"target": {
+							"file": "src/com/android/settings/fuelgauge/AdvancedPowerUsageDetail.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327748846.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"216696167709512814950446931344415427527",
+								"242069008596781188726167804369143583846",
+								"61098438079244257226418625646337190060",
+								"131261859173897395205462984993103168164"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327748846-dd70a6f3",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb",
+						"target": {
+							"file": "src/com/android/settings/fuelgauge/AdvancedPowerUsageDetail.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327748846.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"216696167709512814950446931344415427527",
+								"242069008596781188726167804369143583846",
+								"61098438079244257226418625646337190060",
+								"131261859173897395205462984993103168164"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327748846-7617e1d4",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb",
+						"target": {
+							"file": "src/com/android/settings/fuelgauge/AdvancedPowerUsageDetail.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327748846.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-10-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/apps/Settings/+/db26138f07db830e3fb78283d37de3c0296d93cb"
+		}
+	]
+}

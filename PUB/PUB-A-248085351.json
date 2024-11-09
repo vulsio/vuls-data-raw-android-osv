@@ -1,0 +1,102 @@
+{
+	"schema_version": "1.6.0",
+	"id": "PUB-A-248085351",
+	"modified": "2024-11-06T12:16:03.231308Z",
+	"published": "2023-03-01T00:00:00Z",
+	"aliases": [
+		"A-248085351",
+		"CVE-2023-21032"
+	],
+	"details": "In _ufdt_output_node_to_fdt of ufdt_convert.c, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/libufdt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-03-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb"
+				],
+				"severity": "Moderate",
+				"spl": "2023-03-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "48566471888128867052127023751339672150",
+							"length": 403
+						},
+						"id": "PUB-A-248085351-0b369ae9",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb",
+						"target": {
+							"file": "ufdt_convert.c",
+							"function": "ufdt_from_fdt"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"185996014945940549936661149226636308853",
+								"288703381192084761475383950725069642847",
+								"75599390295419974666935250510860264026",
+								"338115010868215642945498986306346416208",
+								"172310728119040866969902223522134157238",
+								"135259040793266689830984966664586614446"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-248085351-5bfa71d1",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb",
+						"target": {
+							"file": "ufdt_convert.c"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-248085351.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2023-03-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb"
+		}
+	]
+}
