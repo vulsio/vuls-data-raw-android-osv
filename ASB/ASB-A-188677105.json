@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-188677105",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-11-13T20:05:05.713550Z",
 	"published": "2022-06-01T00:00:00Z",
 	"aliases": [
 		"A-188677105",
@@ -200,7 +200,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"255459536377983931902989458615315289061",
@@ -381,7 +381,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "301116223658216820988433663286596269377",
 							"length": 523
@@ -639,7 +639,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"237380268106501284545182464634738026978",
@@ -782,7 +782,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "179571722508262625133525411176625437425",
 							"length": 514
