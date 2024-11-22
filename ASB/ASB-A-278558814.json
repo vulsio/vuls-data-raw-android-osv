@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-278558814",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-11-22T17:09:39.136216Z",
 	"published": "2023-11-01T00:00:00Z",
 	"aliases": [
 		"A-278558814",
@@ -150,7 +150,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "275372314725821542637644716462634945986",
 							"length": 71
@@ -165,7 +165,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"171548852846172734744435483104381182718",
@@ -184,7 +184,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "299885229804771728740092935875043806001",
 							"length": 525
@@ -202,7 +202,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"19328514911481988449621301501520510512",
@@ -259,7 +259,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"171548852846172734744435483104381182718",
@@ -278,7 +278,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "275372314725821542637644716462634945986",
 							"length": 71
@@ -293,7 +293,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "299885229804771728740092935875043806001",
 							"length": 525
@@ -311,7 +311,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"19328514911481988449621301501520510512",
@@ -368,7 +368,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "275372314725821542637644716462634945986",
 							"length": 71
@@ -383,7 +383,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "299885229804771728740092935875043806001",
 							"length": 525
@@ -401,7 +401,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"19328514911481988449621301501520510512",
@@ -421,7 +421,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"171548852846172734744435483104381182718",
@@ -477,7 +477,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "299885229804771728740092935875043806001",
 							"length": 525
@@ -495,7 +495,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"171548852846172734744435483104381182718",
@@ -514,7 +514,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "275372314725821542637644716462634945986",
 							"length": 71
@@ -529,7 +529,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"19328514911481988449621301501520510512",
