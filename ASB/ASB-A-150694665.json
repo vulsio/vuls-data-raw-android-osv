@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-150694665",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-11-26T22:41:38.593861Z",
 	"published": "2022-01-01T00:00:00Z",
 	"aliases": [
 		"A-150694665",
@@ -41,7 +41,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"110645044466692755255968319713222398679",
@@ -60,7 +60,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "36343471337147875092234569293076229804",
 							"length": 126

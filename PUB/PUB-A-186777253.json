@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-186777253",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-11-26T22:41:38.593861Z",
 	"published": "2022-12-01T00:00:00Z",
 	"aliases": [
 		"A-186777253",
@@ -41,7 +41,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "293984007239053792393002895464783282289",
 							"length": 708
@@ -56,7 +56,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "294323057906760878418382000322794272363",
 							"length": 43
@@ -71,7 +71,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "179991157583453353224773042644488684840",
 							"length": 3544
@@ -86,7 +86,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"182575051683400380894931960465293460270",

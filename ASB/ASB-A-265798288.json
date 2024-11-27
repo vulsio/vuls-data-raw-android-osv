@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-265798288",
-	"modified": "2024-11-07T14:19:33.240022Z",
+	"modified": "2024-11-26T22:33:13.093992Z",
 	"published": "2023-09-01T00:00:00Z",
 	"aliases": [
 		"A-265798288",
@@ -41,7 +41,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"105742063094871766937010577244347100362",
@@ -60,7 +60,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "5312624277853522920463986731625181836",
 							"length": 724
@@ -112,7 +112,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"284645906073750632685697538823996009341",
@@ -131,7 +131,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "65087535959933335363694556889345845267",
 							"length": 692
@@ -183,7 +183,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"284645906073750632685697538823996009341",
@@ -202,7 +202,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "65087535959933335363694556889345845267",
 							"length": 692
@@ -254,7 +254,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "65087535959933335363694556889345845267",
 							"length": 692
@@ -269,7 +269,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"284645906073750632685697538823996009341",
@@ -325,7 +325,7 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"line_hashes": [
 								"105742063094871766937010577244347100362",
@@ -344,7 +344,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "5312624277853522920463986731625181836",
 							"length": 724

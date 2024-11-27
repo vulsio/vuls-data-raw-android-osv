@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-257443051",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-11-26T22:41:38.593861Z",
 	"published": "2023-02-01T00:00:00Z",
 	"aliases": [
 		"A-257443051",
@@ -445,7 +445,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "151536618048851767232811806267239231843",
 							"length": 451
