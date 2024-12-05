@@ -1,0 +1,318 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-350118416",
+	"modified": "2024-12-05T16:12:15.110193Z",
+	"published": "2024-12-01T00:00:00Z",
+	"aliases": [
+		"A-350118416",
+		"CVE-2024-43097"
+	],
+	"details": "In resizeToAtLeast of SkRegion.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/skia"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7"
+				],
+				"severity": "High",
+				"spl": "2024-12-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"20444537743571030419082478851202225654",
+								"2141729682397009313921058090542615410",
+								"165677424124438213383043347907327501743",
+								"113967055573560121716510859654132651808"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-350118416-499eb826",
+						"match_only_versions": [
+							"12"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7",
+						"target": {
+							"file": "src/core/SkRegion.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-350118416.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/skia"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7"
+				],
+				"severity": "High",
+				"spl": "2024-12-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"20444537743571030419082478851202225654",
+								"2141729682397009313921058090542615410",
+								"165677424124438213383043347907327501743",
+								"113967055573560121716510859654132651808"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-350118416-9a4d689f",
+						"match_only_versions": [
+							"12L"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7",
+						"target": {
+							"file": "src/core/SkRegion.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-350118416.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/skia"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2024-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7"
+				],
+				"severity": "High",
+				"spl": "2024-12-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"20444537743571030419082478851202225654",
+								"2141729682397009313921058090542615410",
+								"165677424124438213383043347907327501743",
+								"113967055573560121716510859654132651808"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-350118416-edbaba01",
+						"match_only_versions": [
+							"15"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7",
+						"target": {
+							"file": "src/core/SkRegion.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-350118416.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/skia"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7"
+				],
+				"severity": "High",
+				"spl": "2024-12-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"20444537743571030419082478851202225654",
+								"2141729682397009313921058090542615410",
+								"165677424124438213383043347907327501743",
+								"113967055573560121716510859654132651808"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-350118416-c781a554",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7",
+						"target": {
+							"file": "src/core/SkRegion.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-350118416.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/skia"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7"
+				],
+				"severity": "High",
+				"spl": "2024-12-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"20444537743571030419082478851202225654",
+								"2141729682397009313921058090542615410",
+								"165677424124438213383043347907327501743",
+								"113967055573560121716510859654132651808"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-350118416-c9e6945a",
+						"match_only_versions": [
+							"14"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7",
+						"target": {
+							"file": "src/core/SkRegion.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-350118416.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-12-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/external/skia/+/8d355fe1d0795fc30b84194b87563f75c6f8f2a7"
+		}
+	]
+}
