@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-279055389",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-12-12T18:04:59Z",
 	"published": "2024-02-01T00:00:00Z",
 	"aliases": [
 		"A-279055389",
@@ -68,6 +68,41 @@
 			"ecosystem_specific": {
 				"fixes": [
 					"https://android.googlesource.com/platform/external/pdfium/+/0712eae5bb0bce5ae0027c680373a412fcbfeac1"
+				],
+				"severity": "High",
+				"spl": "2024-02-01",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/cts"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "11:0"
+						},
+						{
+							"fixed": "11:2024-02-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"11"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/cts/+/ba1ada191974e23642562437a167160f4baa2e94"
 				],
 				"severity": "High",
 				"spl": "2024-02-01",
