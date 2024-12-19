@@ -1,13 +1,13 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-335213696",
-	"modified": "2024-12-05T16:12:14.848569Z",
+	"modified": "2024-12-18T17:08:44Z",
 	"published": "2024-12-01T00:00:00Z",
 	"aliases": [
 		"A-335213696",
 		"CVE-2024-53841"
 	],
-	"details": "In startListeningForDeviceStateChanges of TBD, there is a possible Permission Bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"details": "In startListeningForDeviceStateChanges, there is a possible Permission Bypass due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
 		{
 			"package": {
