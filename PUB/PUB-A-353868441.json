@@ -1,8 +1,8 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-353868441",
-	"modified": "2024-12-05T16:12:15.379180Z",
-	"published": "2024-12-01T00:00:00Z",
+	"modified": "2025-01-06T16:09:13Z",
+	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-353868441",
 		"CVE-2024-53842"
@@ -22,7 +22,7 @@
 							"introduced": ":0"
 						},
 						{
-							"fixed": ":2024-12-05"
+							"fixed": ":2025-01-05"
 						}
 					]
 				}
@@ -32,7 +32,7 @@
 			],
 			"ecosystem_specific": {
 				"severity": "Critical",
-				"spl": "2024-12-05",
+				"spl": "2025-01-05",
 				"types": [
 					"RCE"
 				]
@@ -45,7 +45,7 @@
 	"references": [
 		{
 			"type": "ADVISORY",
-			"url": "https://source.android.com/security/bulletin/2024-12-01"
+			"url": "https://source.android.com/security/bulletin/2025-01-01"
 		}
 	]
 }

@@ -1,0 +1,166 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-363248394",
+	"modified": "2025-01-13T21:12:09.536270Z",
+	"published": "2025-01-01T00:00:00Z",
+	"aliases": [
+		"A-363248394",
+		"CVE-2024-49742"
+	],
+	"details": "In onCreate of NotificationAccessConfirmationActivity.java , there is a possible way to hide an app with notification access in Settings due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/7ae59a42eb13f643d842525208619037c074371a"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "45178275718944758447062834043860974696",
+							"length": 22
+						},
+						"id": "ASB-A-363248394-36eab0ab",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/7ae59a42eb13f643d842525208619037c074371a",
+						"target": {
+							"file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java",
+							"function": "onBackPressed"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "158058501711243768092335401639404740954",
+							"length": 534
+						},
+						"id": "ASB-A-363248394-49871e68",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/7ae59a42eb13f643d842525208619037c074371a",
+						"target": {
+							"file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java",
+							"function": "onAllow"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"57727154343770777405582517321238337154",
+								"240299413138754236445741587685939021564",
+								"56485816086395040808892777746068628670",
+								"141220926358305337894019062638802357885",
+								"227002494228847845254187301756915597624",
+								"330638076505241857648771747028368404776",
+								"99092410661102412195360826873398395171",
+								"14103810232702175623170287818503365343",
+								"317202621517561104950015159086261898572",
+								"191479634492722483872519470832523952093",
+								"197714015620490234314031268762055085156",
+								"119365618824003008288156991754343644937",
+								"123749577098740968685961213750306873985",
+								"177362007595037873971564041011192325357",
+								"53591544466251393366937668994109452227",
+								"305088722976120007750667000500426231436",
+								"306209512473516296155736136729834633101",
+								"118550500567950120178115643643381551211",
+								"302397935007188022697211775042314056052",
+								"232950848787682393215759979238303333680",
+								"40005311771178354065038403669416926752",
+								"211775574209560010576260318010958178028",
+								"266881839522848279143316692961588307042",
+								"280167219989943914343817339763513038756",
+								"267211863654729794929081226421728462297",
+								"270694349273209714412497048716314078843",
+								"144025403237800394119601872020402640883",
+								"37501214243172625515734330041113614766",
+								"53958031742443912502115050690555681788",
+								"262103182444260585763988288681127480223",
+								"274554937747220808834387043439148808182",
+								"9870317711005571778903137631517401320",
+								"38503349405693615785621802973413453701",
+								"96913160311998657077363225236442605664",
+								"159311489985207720856506450665721091486",
+								"172494747311373234724771676784500986050",
+								"298619143740932187285643586510739257434",
+								"281331493451922174030551833738246710447"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-363248394-6ebed7ad",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/7ae59a42eb13f643d842525208619037c074371a",
+						"target": {
+							"file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "263292827110599531548209042734242461098",
+							"length": 2095
+						},
+						"id": "ASB-A-363248394-cac91c5c",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/7ae59a42eb13f643d842525208619037c074371a",
+						"target": {
+							"file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java",
+							"function": "onCreate"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-363248394.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		}
+	]
+}

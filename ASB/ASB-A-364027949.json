@@ -1,0 +1,217 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-364027949",
+	"modified": "2025-01-13T21:12:09.845318Z",
+	"published": "2025-01-01T00:00:00Z",
+	"aliases": [
+		"A-364027949",
+		"CVE-2024-43771"
+	],
+	"details": "In gatts_process_read_req of gatt_sr.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"73195809151671638912021880081212524930",
+								"166502590214268424367121578547746522305",
+								"247706984838498109398675757824649790753",
+								"315019094983899779418568733552817699748",
+								"83762924092308347658617299944389919479",
+								"254902864810161459416971793163088546379",
+								"196178134462344522814176753984460788197",
+								"279622060697144804304625180375643630946",
+								"223477382937635419669272203771965103767",
+								"1960198259503915119967230187628605704",
+								"66254350827859887876499744116862209316",
+								"262806853860335332372772791548586258965",
+								"150611675201788300272142464243413304173"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-364027949-17a826f7",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "140878766634733266954635798763519620581",
+							"length": 1324
+						},
+						"id": "ASB-A-364027949-3827c5ea",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_primary_service_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "248491112306616213556074563010930516473",
+							"length": 1717
+						},
+						"id": "ASB-A-364027949-3ff0fad8",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_read_by_type_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "69665958368321808384825513943432689445",
+							"length": 1157
+						},
+						"id": "ASB-A-364027949-b43efdf5",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_read_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "324626715642112619947952676342156858113",
+							"length": 1017
+						},
+						"id": "ASB-A-364027949-ba6220ee",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_find_info"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-364027949.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-364027949.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-364027949.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		}
+	]
+}

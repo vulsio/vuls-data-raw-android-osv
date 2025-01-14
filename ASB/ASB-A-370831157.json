@@ -1,0 +1,95 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-370831157",
+	"modified": "2025-01-13T21:12:10.137493Z",
+	"published": "2025-01-01T00:00:00Z",
+	"aliases": [
+		"A-370831157",
+		"CVE-2024-49745"
+	],
+	"details": "In growData of Parcel.cpp, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/native"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/native/+/608524d462278c2c9f6716cd94f126c85e9f2e91"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"307895397742960212067302227339288897944",
+								"131822908674115868299276202866042702205",
+								"128728771849904874058609409408545893271"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-370831157-4fa8fb6a",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/native/+/608524d462278c2c9f6716cd94f126c85e9f2e91",
+						"target": {
+							"file": "libs/binder/Parcel.cpp"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "282245170247511373716560818747658727727",
+							"length": 356
+						},
+						"id": "ASB-A-370831157-97f53c9d",
+						"match_only_versions": [
+							"15-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/native/+/608524d462278c2c9f6716cd94f126c85e9f2e91",
+						"target": {
+							"file": "libs/binder/Parcel.cpp",
+							"function": "Parcel::growData"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-370831157.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		}
+	]
+}
