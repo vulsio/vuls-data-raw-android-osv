@@ -1,12 +1,11 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-184847809",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2025-01-14T08:57:14.862579Z",
 	"published": "2021-10-01T00:00:00Z",
 	"aliases": [
 		"A-184847809",
-		"CVE-2021-22555",
-		"GHSA-xxx5-8mvq-3528"
+		"CVE-2021-22555"
 	],
 	"details": "In xt_compat_target_from_user of x_tables.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
