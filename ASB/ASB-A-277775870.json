@@ -1,0 +1,50 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-277775870",
+	"modified": "2025-01-17T16:12:20.490271Z",
+	"published": "2023-06-01T00:00:00Z",
+	"aliases": [
+		"A-277775870",
+		"CVE-2021-0701"
+	],
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": ":unknown:"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "SoCVersion:0"
+						},
+						{
+							"fixed": "SoCVersion:2023-06-05"
+						}
+					]
+				}
+			],
+			"versions": [
+				"SoCVersion"
+			],
+			"ecosystem_specific": {
+				"severity": "High",
+				"spl": "2023-06-05",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-277775870.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2023-06-01"
+		}
+	]
+}

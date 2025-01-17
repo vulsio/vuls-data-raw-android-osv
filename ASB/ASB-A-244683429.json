@@ -1,0 +1,52 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-244683429",
+	"modified": "2025-01-17T16:12:15.017573Z",
+	"published": "2022-11-01T00:00:00Z",
+	"aliases": [
+		"A-244683429",
+		"CVE-2022-38676",
+		"U-1908118"
+	],
+	"details": "In  gpu driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": ":unknown:"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "SoCVersion:0"
+						},
+						{
+							"fixed": "SoCVersion:2022-11-05"
+						}
+					]
+				}
+			],
+			"versions": [
+				"SoCVersion"
+			],
+			"ecosystem_specific": {
+				"severity": "High",
+				"spl": "2022-11-05",
+				"types": [
+					"DoS"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-244683429.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2022-11-01"
+		}
+	]
+}

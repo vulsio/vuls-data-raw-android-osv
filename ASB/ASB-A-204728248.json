@@ -1,0 +1,52 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-204728248",
+	"modified": "2025-01-17T16:12:11.097102Z",
+	"published": "2022-01-01T00:00:00Z",
+	"aliases": [
+		"A-204728248",
+		"CVE-2021-40148",
+		"M-MOLY00716585"
+	],
+	"details": "In Modem EMM, there is a possible information disclosure due to a missing data encryption. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": ":unknown:"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "SoCVersion:0"
+						},
+						{
+							"fixed": "SoCVersion:2022-01-05"
+						}
+					]
+				}
+			],
+			"versions": [
+				"SoCVersion"
+			],
+			"ecosystem_specific": {
+				"severity": "High",
+				"spl": "2022-01-05",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-204728248.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2022-01-01"
+		}
+	]
+}

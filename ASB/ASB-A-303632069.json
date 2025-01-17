@@ -1,0 +1,50 @@
+{
+	"schema_version": "1.6.0",
+	"id": "ASB-A-303632069",
+	"modified": "2025-01-17T16:12:23.636877Z",
+	"published": "2024-05-01T00:00:00Z",
+	"aliases": [
+		"A-303632069",
+		"CVE-2023-6363"
+	],
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": ":unknown:"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "SoCVersion:0"
+						},
+						{
+							"fixed": "SoCVersion:2024-05-05"
+						}
+					]
+				}
+			],
+			"versions": [
+				"SoCVersion"
+			],
+			"ecosystem_specific": {
+				"severity": "High",
+				"spl": "2024-05-05",
+				"types": [
+					"Unknown"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-303632069.json"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "ADVISORY",
+			"url": "https://source.android.com/security/bulletin/2024-05-01"
+		}
+	]
+}
