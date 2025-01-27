@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-300904123",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-09-05T15:27:10.008189Z",
 	"published": "2024-09-01T00:00:00Z",
 	"aliases": [
 		"A-300904123",
@@ -70,6 +70,290 @@
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/9d97cd5825066ac8e15bbf97f6755663c5341afb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-300904123.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"273007395339179459318524592803684622704",
+								"142951750098190853354393223095975446028",
+								"204579555969700246112803004237674141628",
+								"108473673675401684701075550158319777465"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-300904123-65357c9d",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "118735567341144056654850713330831375971",
+							"length": 2168
+						},
+						"id": "ASB-A-300904123-f6eb9734",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java",
+							"function": "bindAndGetCallIdentification"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-300904123.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"273007395339179459318524592803684622704",
+								"142951750098190853354393223095975446028",
+								"204579555969700246112803004237674141628",
+								"108473673675401684701075550158319777465"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-300904123-2a970493",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "118735567341144056654850713330831375971",
+							"length": 2168
+						},
+						"id": "ASB-A-300904123-99edd508",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java",
+							"function": "bindAndGetCallIdentification"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-300904123.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"273007395339179459318524592803684622704",
+								"142951750098190853354393223095975446028",
+								"204579555969700246112803004237674141628",
+								"108473673675401684701075550158319777465"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-300904123-42338d96",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "118735567341144056654850713330831375971",
+							"length": 2168
+						},
+						"id": "ASB-A-300904123-e4593596",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java",
+							"function": "bindAndGetCallIdentification"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-300904123.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "118735567341144056654850713330831375971",
+							"length": 2168
+						},
+						"id": "ASB-A-300904123-4e6a8073",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
+						"target": {
+							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java",
+							"function": "bindAndGetCallIdentification"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"273007395339179459318524592803684622704",
+								"142951750098190853354393223095975446028",
+								"204579555969700246112803004237674141628",
+								"108473673675401684701075550158319777465"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-300904123-878c0f59",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/d57f25311acb7fb887fb0296364526345cc905bb",
 						"target": {
 							"file": "src/com/android/server/telecom/CallScreeningServiceHelper.java"
 						}

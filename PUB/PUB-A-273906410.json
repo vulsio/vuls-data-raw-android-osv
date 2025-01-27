@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-273906410",
-	"modified": "2024-11-06T15:39:50.772615Z",
+	"modified": "2024-08-29T07:13:17.380144Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-273906410",
@@ -78,6 +78,83 @@
 						"target": {
 							"file": "services/core/java/com/android/server/wm/WindowManagerService.java",
 							"function": "requestAppKeyboardShortcuts"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-273906410.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/73106154f0e6903306d9cd2dd2abb54e3d6060fc"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "315619079827860703202469537729064946840",
+							"length": 217
+						},
+						"id": "PUB-A-273906410-53b31642",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/73106154f0e6903306d9cd2dd2abb54e3d6060fc",
+						"target": {
+							"file": "services/core/java/com/android/server/wm/WindowManagerService.java",
+							"function": "requestAppKeyboardShortcuts"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"166388345987614059611139162951360642360",
+								"48190828431332379007271905227295101451",
+								"88571936432447354195587897837460052731",
+								"221178992257005543686113589176078685481"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-273906410-af919bf2",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/73106154f0e6903306d9cd2dd2abb54e3d6060fc",
+						"target": {
+							"file": "services/core/java/com/android/server/wm/WindowManagerService.java"
 						}
 					}
 				]

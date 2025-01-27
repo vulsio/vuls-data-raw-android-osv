@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-175190844",
-	"modified": "2024-11-07T16:07:08.327517Z",
+	"modified": "2024-08-07T19:29:47.009496Z",
 	"published": "2023-05-01T00:00:00Z",
 	"aliases": [
 		"A-175190844",
@@ -1701,6 +1701,41 @@
 		{
 			"package": {
 				"ecosystem": "Android",
+				"name": "platform/packages/apps/PackageInstaller"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "11:0"
+						},
+						{
+							"fixed": "11:2023-05-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"11"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7bba0cc89e96d9c52a5fb3e53bd4fbdd83119a4f"
+				],
+				"severity": "High",
+				"spl": "2023-05-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-175190844.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
 				"name": "platform/frameworks/base"
 			},
 			"ranges": [
@@ -2267,7 +2302,7 @@
 						}
 					},
 					{
-						"deprecated": false,
+						"deprecated": true,
 						"digest": {
 							"function_hash": "54800756918741013734695263059252226667",
 							"length": 118

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-168802517",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:12:50.671951Z",
 	"published": "2021-07-01T00:00:00Z",
 	"aliases": [
 		"A-168802517",
@@ -29,6 +29,38 @@
 			],
 			"versions": [
 				"qt"
+			],
+			"ecosystem_specific": {
+				"severity": "High",
+				"spl": "2021-07-05",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-168802517.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": ":unknown:"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "rvc:0"
+						},
+						{
+							"fixed": "rvc:2021-07-05"
+						}
+					]
+				}
+			],
+			"versions": [
+				"rvc"
 			],
 			"ecosystem_specific": {
 				"severity": "High",

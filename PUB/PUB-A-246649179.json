@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-246649179",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T06:58:03.260619Z",
 	"published": "2022-12-01T00:00:00Z",
 	"aliases": [
 		"A-246649179",
@@ -12,7 +12,7 @@
 		{
 			"package": {
 				"ecosystem": "Android",
-				"name": ":unknown:"
+				"name": "platform/packages/modules/Uwb"
 			},
 			"ranges": [
 				{
@@ -31,10 +31,48 @@
 				"13"
 			],
 			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Uwb/+/4c7892059f1722aff75111627dcdb49ece7e52a1"
+				],
 				"severity": "Moderate",
 				"spl": "2022-12-01",
 				"types": [
 					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"327855466733719775500748613292046466582",
+								"275618921786883186575756433754854313469",
+								"235794999975364904245979153751753698096"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-246649179-bc90a7ba",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Uwb/+/4c7892059f1722aff75111627dcdb49ece7e52a1",
+						"target": {
+							"file": "service/uci/jni/UwbEventManager.cpp"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "257818005522242306903828350521367885099",
+							"length": 1981
+						},
+						"id": "PUB-A-246649179-f045eb84",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Uwb/+/4c7892059f1722aff75111627dcdb49ece7e52a1",
+						"target": {
+							"file": "service/uci/jni/UwbEventManager.cpp",
+							"function": "UwbEventManager::onMulticastListUpdateNotificationReceived"
+						}
+					}
 				]
 			},
 			"database_specific": {

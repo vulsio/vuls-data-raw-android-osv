@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-179725730",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:29:16.088358Z",
 	"published": "2022-12-01T00:00:00Z",
 	"aliases": [
 		"A-179725730",
@@ -527,6 +527,81 @@
 						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/27bddff2aca2b6095eba52f3a55532c511d77767",
 						"target": {
 							"file": "src/com/android/settings/password/ChooseLockPassword.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-179725730.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2022-12-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/6888543d3a6cde5a9e16f9accb0a4256152aba2d"
+				],
+				"severity": "Moderate",
+				"spl": "2022-12-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "238620553303241372667992318725306975830",
+							"length": 1602
+						},
+						"id": "ASB-A-179725730-2911879e",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/6888543d3a6cde5a9e16f9accb0a4256152aba2d",
+						"target": {
+							"file": "packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationShadeWindowControllerImpl.java",
+							"function": "applyKeyguardFlags"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"313189170293824864489143762395075268145",
+								"255245743891953634338961965248206490283",
+								"102618521164964906511069436832132808258",
+								"11980846928859312755385768075647391572",
+								"243031757802001598505788680975253591531",
+								"120337641038823213914100008065611879597",
+								"28541874676783003466994450681132831710",
+								"178566187230414850999822235989713981936"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-179725730-dfc8a093",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/6888543d3a6cde5a9e16f9accb0a4256152aba2d",
+						"target": {
+							"file": "packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationShadeWindowControllerImpl.java"
 						}
 					}
 				]

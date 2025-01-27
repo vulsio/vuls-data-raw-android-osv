@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-263545186",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:14.913098Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-263545186",
@@ -47,9 +47,6 @@
 							"length": 930
 						},
 						"id": "PUB-A-263545186-46fb1e4b",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b45b847923b0961a72c007fabf241aeb288555a7",
@@ -72,14 +69,84 @@
 							"threshold": 0.9
 						},
 						"id": "PUB-A-263545186-6820681e",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b45b847923b0961a72c007fabf241aeb288555a7",
 						"target": {
 							"file": "system/btif/src/btif_sdp_server.cc"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-263545186.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b45b847923b0961a72c007fabf241aeb288555a7"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"317788044459968284923696034204101275166",
+								"41588262629951368502940914956533878477",
+								"95628027711683019450085083107078831723",
+								"304214588498363512538106009430986837166",
+								"201022218695380493521015868191795181323",
+								"149003916611454817267061666945564548709"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-263545186-74986535",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b45b847923b0961a72c007fabf241aeb288555a7",
+						"target": {
+							"file": "system/btif/src/btif_sdp_server.cc"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "20097229009039841849162195789412494020",
+							"length": 930
+						},
+						"id": "PUB-A-263545186-e4b28e5e",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b45b847923b0961a72c007fabf241aeb288555a7",
+						"target": {
+							"file": "system/btif/src/btif_sdp_server.cc",
+							"function": "on_create_record_event"
 						}
 					}
 				]

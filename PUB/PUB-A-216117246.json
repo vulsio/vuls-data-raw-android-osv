@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-216117246",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:01.682869Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-216117246",
@@ -78,6 +78,83 @@
 						"target": {
 							"file": "src/com/android/settings/applications/defaultapps/DefaultAutofillPicker.java",
 							"function": "getConfirmationMessage"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-216117246.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/be9cb36c6ed3d7a0c5bd570e39a029d90f19e77d"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "295698862211025002714271578403236704219",
+							"length": 244
+						},
+						"id": "PUB-A-216117246-86070c11",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/be9cb36c6ed3d7a0c5bd570e39a029d90f19e77d",
+						"target": {
+							"file": "src/com/android/settings/applications/defaultapps/DefaultAutofillPicker.java",
+							"function": "getConfirmationMessage"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"84973403902456332933103075042449787071",
+								"288182705816889430905902931154580621787",
+								"243979803866077354900593225175769869966",
+								"282458826607158652167865292557120657053"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-216117246-f4c97e47",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/be9cb36c6ed3d7a0c5bd570e39a029d90f19e77d",
+						"target": {
+							"file": "src/com/android/settings/applications/defaultapps/DefaultAutofillPicker.java"
 						}
 					}
 				]

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-248085351",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T06:58:03.511666Z",
 	"published": "2023-03-01T00:00:00Z",
 	"aliases": [
 		"A-248085351",
@@ -32,7 +32,7 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb"
+					"https://android.googlesource.com/platform/system/libufdt/+/b70383d8af4586a5fa8b16b54c43454bf155c215"
 				],
 				"severity": "Moderate",
 				"spl": "2023-03-01",
@@ -43,43 +43,38 @@
 					{
 						"deprecated": false,
 						"digest": {
-							"function_hash": "48566471888128867052127023751339672150",
-							"length": 403
-						},
-						"id": "PUB-A-248085351-0b369ae9",
-						"match_only_versions": [
-							"13"
-						],
-						"signature_type": "Function",
-						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb",
-						"target": {
-							"file": "ufdt_convert.c",
-							"function": "ufdt_from_fdt"
-						}
-					},
-					{
-						"deprecated": false,
-						"digest": {
 							"line_hashes": [
 								"185996014945940549936661149226636308853",
-								"288703381192084761475383950725069642847",
-								"75599390295419974666935250510860264026",
-								"338115010868215642945498986306346416208",
+								"33760819164134696779677180225239044425",
+								"8661123515658004340251122499297930676",
+								"127870674633992435070714280942576474328",
+								"62113322542557763581533776596464778371",
 								"172310728119040866969902223522134157238",
 								"135259040793266689830984966664586614446"
 							],
 							"threshold": 0.9
 						},
-						"id": "PUB-A-248085351-5bfa71d1",
-						"match_only_versions": [
-							"13"
-						],
+						"id": "PUB-A-248085351-6ce58280",
 						"signature_type": "Line",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/system/libufdt/+/14f8b87308455fce6ab72cf86adccb335a28abeb",
+						"source": "https://android.googlesource.com/platform/system/libufdt/+/b70383d8af4586a5fa8b16b54c43454bf155c215",
 						"target": {
 							"file": "ufdt_convert.c"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "124461904035609904842238398409321041694",
+							"length": 436
+						},
+						"id": "PUB-A-248085351-96388e20",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/system/libufdt/+/b70383d8af4586a5fa8b16b54c43454bf155c215",
+						"target": {
+							"file": "ufdt_convert.c",
+							"function": "ufdt_from_fdt"
 						}
 					}
 				]

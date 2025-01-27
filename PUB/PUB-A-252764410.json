@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-252764410",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:11.476040Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-252764410",
@@ -58,6 +58,65 @@
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/hardware/interfaces/+/708d49cfce0cfa4ef9bd222ea694dbc6338d8798",
+						"target": {
+							"file": "graphics/composer/2.1/utils/hal/include/composer-hal/2.1/ComposerCommandEngine.h"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-252764410.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/hardware/interfaces"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/hardware/interfaces/+/d00b8598bb9f5b993a2b80b5525cde1cb535369f"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"76114283547985291809094089203213410446",
+								"109427530682858320752920774958614958356",
+								"320136780765458802986898507063064923721",
+								"97599872499979904770641959809756837926"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-252764410-e596c4ac",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/hardware/interfaces/+/d00b8598bb9f5b993a2b80b5525cde1cb535369f",
 						"target": {
 							"file": "graphics/composer/2.1/utils/hal/include/composer-hal/2.1/ComposerCommandEngine.h"
 						}

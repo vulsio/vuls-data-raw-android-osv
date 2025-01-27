@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-303871379",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:29:41.483356Z",
 	"published": "2024-03-01T00:00:00Z",
 	"aliases": [
 		"A-303871379",
@@ -281,6 +281,9 @@
 							"length": 84
 						},
 						"id": "ASB-A-303871379-681a27de",
+						"match_only_versions": [
+							"14"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/69c320af3eff7e5b094c235a49e98d0e64fc26a3",

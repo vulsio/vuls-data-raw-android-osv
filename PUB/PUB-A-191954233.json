@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-191954233",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:12:55.024494Z",
 	"published": "2021-12-01T00:00:00Z",
 	"aliases": [
 		"A-191954233",
@@ -32,8 +32,8 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/base/+/bc817f1eff9889292bd2b3cad4d4eed56a9a4830",
-					"https://android.googlesource.com/platform/frameworks/base/+/1d6bc4e1874ae4fbe2695d08464cc2b0f659f997"
+					"https://android.googlesource.com/platform/frameworks/base/+/1d6bc4e1874ae4fbe2695d08464cc2b0f659f997",
+					"https://android.googlesource.com/platform/frameworks/base/+/bc817f1eff9889292bd2b3cad4d4eed56a9a4830"
 				],
 				"severity": "Moderate",
 				"spl": "2021-12-01",

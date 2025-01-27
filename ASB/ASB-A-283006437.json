@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-283006437",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:29:08.590970Z",
 	"published": "2023-08-01T00:00:00Z",
 	"aliases": [
 		"A-283006437",
@@ -482,6 +482,41 @@
 							"file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
 						}
 					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-283006437.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Launcher3"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-08-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Launcher3/+/bdf75772ea2bfd60f004a5d326478bd83deda9a0"
+				],
+				"severity": "High",
+				"spl": "2023-08-01",
+				"types": [
+					"EoP"
 				]
 			},
 			"database_specific": {

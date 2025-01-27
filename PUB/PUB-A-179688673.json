@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-179688673",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:12:52.676369Z",
 	"published": "2021-06-01T00:00:00Z",
 	"aliases": [
 		"A-179688673",
@@ -12,7 +12,7 @@
 		{
 			"package": {
 				"ecosystem": "Android",
-				"name": ":unknown:"
+				"name": "platform/vendor/unbundled_google/packages/MarkupGoogle"
 			},
 			"ranges": [
 				{

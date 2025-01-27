@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-307532206",
-	"modified": "2024-11-07T16:07:08.327517Z",
+	"modified": "2024-10-10T15:12:08.914600Z",
 	"published": "2024-10-01T00:00:00Z",
 	"aliases": [
 		"A-307532206",
@@ -72,9 +72,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-307532206-7aecae62",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/c32cfc60ccf531470f6125b6019d8ab2452b3617",
@@ -622,9 +619,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-307532206-aeab01c3",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/c32cfc60ccf531470f6125b6019d8ab2452b3617",

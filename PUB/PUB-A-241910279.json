@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-241910279",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:09.038402Z",
 	"published": "2023-03-01T00:00:00Z",
 	"aliases": [
 		"A-241910279",
@@ -12,7 +12,7 @@
 		{
 			"package": {
 				"ecosystem": "Android",
-				"name": ":unknown:"
+				"name": "platform/vendor/goodix/udfps"
 			},
 			"ranges": [
 				{

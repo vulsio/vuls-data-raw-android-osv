@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-262235935",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:14.279619Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-262235935",
@@ -70,9 +70,6 @@
 							"length": 416
 						},
 						"id": "PUB-A-262235935-778ab2a2",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/external/wpa_supplicant_8/+/142f4c37b2faea8a751d487e485135cf15b16706",
@@ -88,15 +85,102 @@
 							"length": 614
 						},
 						"id": "PUB-A-262235935-eaaeeb71",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/external/wpa_supplicant_8/+/142f4c37b2faea8a751d487e485135cf15b16706",
 						"target": {
 							"file": "wpa_supplicant/aidl/p2p_iface.cpp",
 							"function": "P2pIface::getSsidInternal"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-262235935.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/external/wpa_supplicant_8"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/external/wpa_supplicant_8/+/bb7c3305c0171b153a66158c46f63151204d7b8e"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"228066257970812311635731777211166196658",
+								"100752120684113076299847136915687889189",
+								"273993613501080822528871467093519953898",
+								"234926275968339717606777172725827074758",
+								"61304571041197757629490486157462941585",
+								"100752120684113076299847136915687889189",
+								"273993613501080822528871467093519953898",
+								"234926275968339717606777172725827074758"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-262235935-50669665",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/wpa_supplicant_8/+/bb7c3305c0171b153a66158c46f63151204d7b8e",
+						"target": {
+							"file": "wpa_supplicant/aidl/p2p_iface.cpp"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "221769818525474882771776081602871643898",
+							"length": 614
+						},
+						"id": "PUB-A-262235935-561d3247",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/wpa_supplicant_8/+/bb7c3305c0171b153a66158c46f63151204d7b8e",
+						"target": {
+							"file": "wpa_supplicant/aidl/p2p_iface.cpp",
+							"function": "P2pIface::getSsidInternal"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "214240181816500263952705582903897011179",
+							"length": 416
+						},
+						"id": "PUB-A-262235935-9b5519ac",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/external/wpa_supplicant_8/+/bb7c3305c0171b153a66158c46f63151204d7b8e",
+						"target": {
+							"file": "wpa_supplicant/aidl/p2p_iface.cpp",
+							"function": "P2pIface::getGroupCapabilityInternal"
 						}
 					}
 				]

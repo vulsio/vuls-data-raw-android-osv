@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-261085213",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:13.899245Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-261085213",
@@ -79,6 +79,84 @@
 						"source": "https://android.googlesource.com/platform/frameworks/native/+/1573a67beda9ae3d940002dcf9150e10567a27fa",
 						"target": {
 							"file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-261085213.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/native"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/native/+/ca8d670c1656a6a47ef0f31fdfe1744d75fe5543"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"303824300990581220001874590490052397503",
+								"148550793917289462821925400875386459930",
+								"153288540937192761921651348382116884854",
+								"42682234385141022261403227674243883843",
+								"15858127591312972650174939353454411654",
+								"328697675169440540323019445779150509594",
+								"60900883573293013481713867900584301640",
+								"11227039276832198482627820593879788695"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-261085213-047fdbf4",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/native/+/ca8d670c1656a6a47ef0f31fdfe1744d75fe5543",
+						"target": {
+							"file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "126951636093306267955210735427030098592",
+							"length": 839
+						},
+						"id": "PUB-A-261085213-5703c03c",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/native/+/ca8d670c1656a6a47ef0f31fdfe1744d75fe5543",
+						"target": {
+							"file": "services/inputflinger/dispatcher/InputDispatcher.cpp",
+							"function": "InputDispatcher::verifyInputEvent"
 						}
 					}
 				]

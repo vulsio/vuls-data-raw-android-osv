@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-329641908",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-09-05T15:27:10.294346Z",
 	"published": "2024-09-01T00:00:00Z",
 	"aliases": [
 		"A-329641908",
@@ -9,6 +9,77 @@
 	],
 	"details": "In getConfig of SoftVideoDecoderOMXComponent.cpp, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/av"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/av/+/53298956ba6bb8f147a632d7aaed8566dfc203ee"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "270907061862744315091167887695626519942",
+							"length": 1836
+						},
+						"id": "ASB-A-329641908-ae237af5",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/53298956ba6bb8f147a632d7aaed8566dfc203ee",
+						"target": {
+							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
+							"function": "SoftVideoDecoderOMXComponent::getConfig"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"323840415345152352608431062819861833872",
+								"291742421858830832420113385530445475501",
+								"220311751295838541376304184315980191218",
+								"285456336744440996357481798234586458990"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-329641908-dfa44e5d",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/53298956ba6bb8f147a632d7aaed8566dfc203ee",
+						"target": {
+							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-329641908.json"
+			}
+		},
 		{
 			"package": {
 				"ecosystem": "Android",
@@ -32,7 +103,7 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3"
+					"https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f"
 				],
 				"severity": "High",
 				"spl": "2024-09-01",
@@ -51,10 +122,10 @@
 							],
 							"threshold": 0.9
 						},
-						"id": "ASB-A-329641908-452f1769",
+						"id": "ASB-A-329641908-04869117",
 						"signature_type": "Line",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp"
 						}
@@ -65,10 +136,10 @@
 							"function_hash": "270907061862744315091167887695626519942",
 							"length": 1836
 						},
-						"id": "ASB-A-329641908-9d8cfb7e",
+						"id": "ASB-A-329641908-630542e9",
 						"signature_type": "Function",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
 							"function": "SoftVideoDecoderOMXComponent::getConfig"
@@ -103,7 +174,7 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3"
+					"https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f"
 				],
 				"severity": "High",
 				"spl": "2024-09-01",
@@ -122,10 +193,10 @@
 							],
 							"threshold": 0.9
 						},
-						"id": "ASB-A-329641908-7df8063d",
+						"id": "ASB-A-329641908-124007d8",
 						"signature_type": "Line",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp"
 						}
@@ -136,10 +207,10 @@
 							"function_hash": "270907061862744315091167887695626519942",
 							"length": 1836
 						},
-						"id": "ASB-A-329641908-ae92e225",
+						"id": "ASB-A-329641908-ca8fc186",
 						"signature_type": "Function",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
 							"function": "SoftVideoDecoderOMXComponent::getConfig"
@@ -174,7 +245,7 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3"
+					"https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f"
 				],
 				"severity": "High",
 				"spl": "2024-09-01",
@@ -182,6 +253,21 @@
 					"EoP"
 				],
 				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "270907061862744315091167887695626519942",
+							"length": 1836
+						},
+						"id": "ASB-A-329641908-5ab80f56",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
+						"target": {
+							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
+							"function": "SoftVideoDecoderOMXComponent::getConfig"
+						}
+					},
 					{
 						"deprecated": false,
 						"digest": {
@@ -193,27 +279,12 @@
 							],
 							"threshold": 0.9
 						},
-						"id": "ASB-A-329641908-2422a411",
+						"id": "ASB-A-329641908-9bfb8368",
 						"signature_type": "Line",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp"
-						}
-					},
-					{
-						"deprecated": false,
-						"digest": {
-							"function_hash": "270907061862744315091167887695626519942",
-							"length": 1836
-						},
-						"id": "ASB-A-329641908-712cac25",
-						"signature_type": "Function",
-						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
-						"target": {
-							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
-							"function": "SoftVideoDecoderOMXComponent::getConfig"
 						}
 					}
 				]
@@ -245,7 +316,7 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3"
+					"https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f"
 				],
 				"severity": "High",
 				"spl": "2024-09-01",
@@ -259,10 +330,10 @@
 							"function_hash": "270907061862744315091167887695626519942",
 							"length": 1836
 						},
-						"id": "ASB-A-329641908-57a42e9e",
+						"id": "ASB-A-329641908-2a807a65",
 						"signature_type": "Function",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
 							"function": "SoftVideoDecoderOMXComponent::getConfig"
@@ -279,10 +350,10 @@
 							],
 							"threshold": 0.9
 						},
-						"id": "ASB-A-329641908-dd6ca958",
+						"id": "ASB-A-329641908-c9e91ade",
 						"signature_type": "Line",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/6d23fa05a40e5462d4b9bad28afa932e6e12a4f3",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/f816148a719d2a3bbf432f11da98b3d5fa7de74f",
 						"target": {
 							"file": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp"
 						}

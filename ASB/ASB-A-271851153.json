@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-271851153",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:29:18.689122Z",
 	"published": "2023-08-01T00:00:00Z",
 	"aliases": [
 		"A-271851153",
@@ -254,16 +254,16 @@
 					"type": "ECOSYSTEM",
 					"events": [
 						{
-							"introduced": "12L:0"
+							"introduced": "12:0"
 						},
 						{
-							"fixed": "12L:2023-08-01"
+							"fixed": "12:2023-08-01"
 						}
 					]
 				}
 			],
 			"versions": [
-				"12L"
+				"12"
 			],
 			"ecosystem_specific": {
 				"fixes": [
@@ -345,6 +345,121 @@
 							"length": 912
 						},
 						"id": "ASB-A-271851153-766cb50f",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b8a7fd8e6f41ee54d27c1e7aaa15b4a3f5365a02",
+						"target": {
+							"file": "services/core/java/com/android/server/media/MediaSessionRecord.java",
+							"function": "MediaSessionRecord"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-271851153.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2023-08-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/b8a7fd8e6f41ee54d27c1e7aaa15b4a3f5365a02"
+				],
+				"severity": "High",
+				"spl": "2023-08-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"112333010306060271287574479567532271789",
+								"173478072067900714635025148433857750736",
+								"26063781366599612095537924233041212811",
+								"334082644998293043635481032334739318235",
+								"91904220062129178345130522063740847558",
+								"180446745819319139455850870156884677676",
+								"339298769310645967952518957997803972437",
+								"812567179315126058623678304580690652",
+								"44274278879701415859994919349602377465",
+								"177837693477925481534174928123200923726",
+								"154532732720219536769453269150136500079",
+								"117979511076169297790614002545558763775",
+								"219355299421215882374711901942129989414",
+								"149747140338208731689258870269997687890",
+								"121012494729016232451427683655646025637",
+								"298200289347575094262899648904552585682",
+								"123840935212931604818249916784566765206",
+								"218197868472122456637773183101211040579",
+								"32964964762233295251048849187627362767",
+								"107866035148356740797267732243638789530",
+								"209731173057944943251888810847159461812",
+								"92098945887893974759868525330932299186",
+								"318820102731267560103760031003940638896",
+								"286921895757114535884683724862522328123",
+								"49136251089971112837700541298568844406",
+								"77266097254666486217265326897378613230",
+								"54178516831407579181215003101298533127",
+								"250826700866732060799766010746178270041",
+								"114588526983791545081435666232784061095",
+								"223559342123259852649070018992413409748",
+								"321331652130150193311337198580133176502",
+								"130485209652729059822780395589867437868",
+								"261378328701788388906080210867659757169"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-271851153-195364e4",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b8a7fd8e6f41ee54d27c1e7aaa15b4a3f5365a02",
+						"target": {
+							"file": "services/core/java/com/android/server/media/MediaSessionRecord.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "103400571377888950412772982225656486389",
+							"length": 370
+						},
+						"id": "ASB-A-271851153-52cc8fa3",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b8a7fd8e6f41ee54d27c1e7aaa15b4a3f5365a02",
+						"target": {
+							"file": "services/core/java/com/android/server/media/MediaSessionRecord.java",
+							"function": "setMetadata"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "24774534586553790363352923633023261866",
+							"length": 912
+						},
+						"id": "ASB-A-271851153-71192cef",
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/b8a7fd8e6f41ee54d27c1e7aaa15b4a3f5365a02",

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-327645387",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-10-10T15:12:09.798188Z",
 	"published": "2024-10-01T00:00:00Z",
 	"aliases": [
 		"A-327645387",
@@ -38,6 +38,294 @@
 				"spl": "2024-10-01",
 				"types": [
 					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327645387.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "63784165284231374071525424989825196510",
+							"length": 5911
+						},
+						"id": "ASB-A-327645387-a8910d74",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab",
+						"target": {
+							"file": "core/java/com/android/internal/app/ChooserActivity.java",
+							"function": "onCreate"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"84297325305596949799677948010160540657",
+								"318593880321436796255787646289661787109",
+								"170078892775301708348239024600099327547",
+								"136723238124976027131566521391507206307"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327645387-afdc431d",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab",
+						"target": {
+							"file": "core/java/com/android/internal/app/ChooserActivity.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327645387.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "63784165284231374071525424989825196510",
+							"length": 5911
+						},
+						"id": "ASB-A-327645387-8270b501",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab",
+						"target": {
+							"file": "core/java/com/android/internal/app/ChooserActivity.java",
+							"function": "onCreate"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"84297325305596949799677948010160540657",
+								"318593880321436796255787646289661787109",
+								"170078892775301708348239024600099327547",
+								"136723238124976027131566521391507206307"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327645387-c91e9ef5",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab",
+						"target": {
+							"file": "core/java/com/android/internal/app/ChooserActivity.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327645387.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "63784165284231374071525424989825196510",
+							"length": 5911
+						},
+						"id": "ASB-A-327645387-6b5f3436",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab",
+						"target": {
+							"file": "core/java/com/android/internal/app/ChooserActivity.java",
+							"function": "onCreate"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"84297325305596949799677948010160540657",
+								"318593880321436796255787646289661787109",
+								"170078892775301708348239024600099327547",
+								"136723238124976027131566521391507206307"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327645387-bcba5047",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/c1d48df29500494aee7c870be336cf69799ce2ab",
+						"target": {
+							"file": "core/java/com/android/internal/app/ChooserActivity.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-327645387.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/IntentResolver"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/IntentResolver/+/94d1e1e4e9539437ec0549b7bf22999054b92f1f"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"324820715498239626715682428195584648648",
+								"317154587703516535654723700091612711469",
+								"110750140557317040413527749644739727538",
+								"151691470971680177407468550681514384386",
+								"264446681702084100092060472357671912025",
+								"145271376068213520057596363127990564696",
+								"21900793622007668300475982509784819962",
+								"172126988629367529953123465038374872397"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-327645387-36540b7a",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/IntentResolver/+/94d1e1e4e9539437ec0549b7bf22999054b92f1f",
+						"target": {
+							"file": "java/src/com/android/intentresolver/ChooserActivity.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "336189774948807934980544245030907515023",
+							"length": 2888
+						},
+						"id": "ASB-A-327645387-685a2c22",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/IntentResolver/+/94d1e1e4e9539437ec0549b7bf22999054b92f1f",
+						"target": {
+							"file": "java/src/com/android/intentresolver/ChooserActivity.java",
+							"function": "onCreate"
+						}
+					}
 				]
 			},
 			"database_specific": {

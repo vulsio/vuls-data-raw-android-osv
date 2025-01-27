@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-318683126",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-10-10T15:12:09.188074Z",
 	"published": "2024-10-01T00:00:00Z",
 	"aliases": [
 		"A-318683126",
@@ -67,12 +67,293 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-318683126-2821c5da",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/b85bee508793e31d6fe37fc9cd4e8fa3787113cc",
+						"target": {
+							"file": "core/java/android/content/Intent.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-318683126.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/68268563631f18bc984ac2295fb41f5cc9a8369d"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"318946998413846104282310968335173811325",
+								"199411611476638331040452521079256241090",
+								"218203338882426500715760159920212879013",
+								"46135789642667038505340636724979197534"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-318683126-2c5c8ae5",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/68268563631f18bc984ac2295fb41f5cc9a8369d",
+						"target": {
+							"file": "core/java/android/content/Intent.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "30897261538142785729978019671257829071",
+							"length": 4826
+						},
+						"id": "ASB-A-318683126-75e23589",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/68268563631f18bc984ac2295fb41f5cc9a8369d",
+						"target": {
+							"file": "core/java/android/content/Intent.java",
+							"function": "parseUriInternal"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-318683126.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/6853510bc3070ee43de4b68ba26c3ca2164f8317"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"318946998413846104282310968335173811325",
+								"199411611476638331040452521079256241090",
+								"218203338882426500715760159920212879013",
+								"46135789642667038505340636724979197534"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-318683126-5044f9b9",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/6853510bc3070ee43de4b68ba26c3ca2164f8317",
+						"target": {
+							"file": "core/java/android/content/Intent.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "30897261538142785729978019671257829071",
+							"length": 4826
+						},
+						"id": "ASB-A-318683126-e3dad05d",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/6853510bc3070ee43de4b68ba26c3ca2164f8317",
+						"target": {
+							"file": "core/java/android/content/Intent.java",
+							"function": "parseUriInternal"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-318683126.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/e716a8dd586a647a809ac2b8331f5c7995c1a147"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "30897261538142785729978019671257829071",
+							"length": 4826
+						},
+						"id": "ASB-A-318683126-2394cdcd",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e716a8dd586a647a809ac2b8331f5c7995c1a147",
+						"target": {
+							"file": "core/java/android/content/Intent.java",
+							"function": "parseUriInternal"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"318946998413846104282310968335173811325",
+								"199411611476638331040452521079256241090",
+								"218203338882426500715760159920212879013",
+								"46135789642667038505340636724979197534"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-318683126-2947ee44",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/e716a8dd586a647a809ac2b8331f5c7995c1a147",
+						"target": {
+							"file": "core/java/android/content/Intent.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-318683126.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/fe93f1262d7a73080fbabacd0c800faa7c2d73e3"
+				],
+				"severity": "High",
+				"spl": "2024-10-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "30897261538142785729978019671257829071",
+							"length": 4826
+						},
+						"id": "ASB-A-318683126-30407ce1",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/fe93f1262d7a73080fbabacd0c800faa7c2d73e3",
+						"target": {
+							"file": "core/java/android/content/Intent.java",
+							"function": "parseUriInternal"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"318946998413846104282310968335173811325",
+								"199411611476638331040452521079256241090",
+								"218203338882426500715760159920212879013",
+								"46135789642667038505340636724979197534"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-318683126-74caff78",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/fe93f1262d7a73080fbabacd0c800faa7c2d73e3",
 						"target": {
 							"file": "core/java/android/content/Intent.java"
 						}

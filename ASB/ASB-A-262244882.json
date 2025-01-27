@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-262244882",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:29:06.238335Z",
 	"published": "2023-10-01T00:00:00Z",
 	"aliases": [
 		"A-262244882",
@@ -492,16 +492,16 @@
 					"type": "ECOSYSTEM",
 					"events": [
 						{
-							"introduced": "12L:0"
+							"introduced": "12:0"
 						},
 						{
-							"fixed": "12L:2023-10-01"
+							"fixed": "12:2023-10-01"
 						}
 					]
 				}
 			],
 			"versions": [
-				"12L"
+				"12"
 			],
 			"ecosystem_specific": {
 				"fixes": [
@@ -726,6 +726,258 @@
 						"target": {
 							"file": "src/com/android/providers/media/scan/ModernMediaScanner.java",
 							"function": "scanFile"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-262244882.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/providers/MediaProvider"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2023-10-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe"
+				],
+				"severity": "High",
+				"spl": "2023-10-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"293338595360357216634915621769779490125",
+								"293480875796088725081779431910005300998",
+								"229360479714426436667518277516546963027",
+								"215632631147669718308027936434738585714",
+								"31929445247905290476559195036969378820",
+								"298419026189429588504287845921917776783",
+								"55414928608552667734179538248706454416",
+								"325452980561517506126749625059860493873",
+								"127994595941605397569320954893821701219",
+								"326917070297464806911031988677080062902",
+								"56884552898825627205274907337855073920",
+								"296058205256672622598938698902389006671",
+								"290574569752126798643017962161297746487",
+								"271872789438952106483508366441628301374",
+								"58537490372954827644581289364674906794",
+								"256907850205614431677234387725912748755",
+								"214131941541828326041018242988882629129",
+								"52561388177643949341224032594294332178",
+								"198453973881791265131096676384919316411",
+								"168461609023342905866958761748186439069",
+								"254034492404121815894748712185122202771",
+								"135175138139924267311547975622158732053",
+								"43693651672511506419582617180681485734"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-262244882-0722b90b",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/util/FileUtils.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "266441365153997168960084149553271921687",
+							"length": 421
+						},
+						"id": "ASB-A-262244882-4f6f4e47",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/util/FileUtils.java",
+							"function": "extractRelativePath"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "5589243008681496106051247365030393518",
+							"length": 302
+						},
+						"id": "ASB-A-262244882-534f6cae",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/scan/ModernMediaScanner.java",
+							"function": "scanDirectory"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "7379329816302002501873590758504963821",
+							"length": 183
+						},
+						"id": "ASB-A-262244882-84c7e8b5",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/scan/ModernMediaScanner.java",
+							"function": "onDirectoryDirty"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "221683732141123627799632749083548393870",
+							"length": 380
+						},
+						"id": "ASB-A-262244882-88f52b3d",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/scan/ModernMediaScanner.java",
+							"function": "scanFile"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"307603880866059122175560751884229674822",
+								"316898835445903537078075510905552345973",
+								"274385123601264679082601272950827964969",
+								"333985750715547149539330539576363896199",
+								"203539707479114642311388100712887886191",
+								"159290420425001879521712009810454182133",
+								"1992729220252619336108142497270173312",
+								"78872073466395838995188815793271891652",
+								"96858605103915107871590139971655941337",
+								"324442134117860312705724246426318874210",
+								"155340588766303165005736780710946821399",
+								"269360079886860449085019400482719804839",
+								"178018079058529092784203926343714470726",
+								"49351544651455731731850242174812584066",
+								"272176496171234653951771367168163878982",
+								"92549712618376107975291150491736487129",
+								"100209391556581094678741227670688902318",
+								"265508392140814337269297747661765935116",
+								"112792916432940025751999181708858497587",
+								"35440882955318640041297077262514379281",
+								"202279366028419265541117751429571937455",
+								"275537593394952830879790932861600507785",
+								"266379498624422228178914950930860578163",
+								"169832184276282617210219384173144840036",
+								"236732265184660035366467935863000898408",
+								"166469694239464614004450595866363409472",
+								"257800245187607152546253352867549063726",
+								"325261787304028780322766723649092094126",
+								"39812289738083831684659274465717216910",
+								"198959780542503197898023811949373440279",
+								"330533826888556056047674810912926995359",
+								"253528211401657743657517985494950670865",
+								"222392845737751392602984549524297120901",
+								"150373979831098039585028312611586114365",
+								"256180770597319990739377763995017601187"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-262244882-a55d0fbd",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/MediaProvider.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"139313042643336987081307850872406508881",
+								"253631061411079611901049753206066288810",
+								"167031887103509732307593943625015381160",
+								"258222700741115556713683865580929642597",
+								"200512697963714971513684474485683440561",
+								"120096635440565860405154014772040913334",
+								"101199100307456852665191517574451052002",
+								"328280160035501749570978879143114207261",
+								"101808290909046738955381926436107396292",
+								"327754664669968217621514211888047604791",
+								"297514348493938433116942020290063821276",
+								"227687074525496537916795244134479578752",
+								"327764158891660283468901343551773668134",
+								"116682761826723630607634821473810995283",
+								"267546229143142607971276190468615775180",
+								"227432774983632750666490848915892036589",
+								"232101810682246092807281489797593154832",
+								"260203627629920216375832183840433607884",
+								"314203800619370421679397572028244728136",
+								"89083079318817131914254170878540572530",
+								"243415337674482987712416207941522638624",
+								"269268985382718866407248637070102155515"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-262244882-ce7754d8",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/scan/ModernMediaScanner.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "196373463449795285137771032768124987838",
+							"length": 5951
+						},
+						"id": "ASB-A-262244882-ea5b4b6f",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/MediaProvider.java",
+							"function": "callInternal"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "71946387644457027304253654148460003811",
+							"length": 272
+						},
+						"id": "ASB-A-262244882-fdb2a8f5",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/providers/MediaProvider/+/c934d394d3dfa56ad9bb41faeb0b49001785f0fe",
+						"target": {
+							"file": "src/com/android/providers/media/util/FileUtils.java",
+							"function": "getCanonicalPath"
 						}
 					}
 				]

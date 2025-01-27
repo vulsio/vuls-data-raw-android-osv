@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-329058967",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-09-05T15:27:10.221852Z",
 	"published": "2024-09-01T00:00:00Z",
 	"aliases": [
 		"A-329058967",
@@ -76,6 +76,306 @@
 						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/8c619f58c00047ab0ec687cd231bf93a08db6d55",
 						"target": {
 							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-329058967.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "95813100806952752517657637119407566504",
+							"length": 967
+						},
+						"id": "ASB-A-329058967-59f27bd8",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java",
+							"function": "handleCreateConferenceComplete"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"100326431459558569292119600264389787165",
+								"224460809244113809053494007357703622319",
+								"333762841701727134505390074716578964885",
+								"199218706011219857461499847670488384710",
+								"19256926819814878956514261880855948330",
+								"139717360613838074749875733557269753678",
+								"183664305217219171351514465603028527937",
+								"139804455583322841000522678523842891823"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-329058967-95620e20",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-329058967.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "95813100806952752517657637119407566504",
+							"length": 967
+						},
+						"id": "ASB-A-329058967-a89ec6bf",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java",
+							"function": "handleCreateConferenceComplete"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"100326431459558569292119600264389787165",
+								"224460809244113809053494007357703622319",
+								"333762841701727134505390074716578964885",
+								"199218706011219857461499847670488384710",
+								"19256926819814878956514261880855948330",
+								"139717360613838074749875733557269753678",
+								"183664305217219171351514465603028527937",
+								"139804455583322841000522678523842891823"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-329058967-f721f28f",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-329058967.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "95813100806952752517657637119407566504",
+							"length": 967
+						},
+						"id": "ASB-A-329058967-38f99250",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java",
+							"function": "handleCreateConferenceComplete"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"100326431459558569292119600264389787165",
+								"224460809244113809053494007357703622319",
+								"333762841701727134505390074716578964885",
+								"199218706011219857461499847670488384710",
+								"19256926819814878956514261880855948330",
+								"139717360613838074749875733557269753678",
+								"183664305217219171351514465603028527937",
+								"139804455583322841000522678523842891823"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-329058967-9add1c5f",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-329058967.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"100326431459558569292119600264389787165",
+								"224460809244113809053494007357703622319",
+								"333762841701727134505390074716578964885",
+								"199218706011219857461499847670488384710",
+								"19256926819814878956514261880855948330",
+								"139717360613838074749875733557269753678",
+								"183664305217219171351514465603028527937",
+								"139804455583322841000522678523842891823"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-329058967-2e324b4b",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "95813100806952752517657637119407566504",
+							"length": 967
+						},
+						"id": "ASB-A-329058967-d2421a4a",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/a8e2bf9c77cd94f683979c849015b78ef0537802",
+						"target": {
+							"file": "src/com/android/server/telecom/ConnectionServiceWrapper.java",
+							"function": "handleCreateConferenceComplete"
 						}
 					}
 				]

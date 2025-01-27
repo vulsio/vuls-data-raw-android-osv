@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-328068777",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:29:20.558746Z",
 	"published": "2024-05-01T00:00:00Z",
 	"aliases": [
 		"A-328068777",
@@ -154,6 +154,155 @@
 						"target": {
 							"file": "service/java/com/android/server/healthconnect/HealthConnectServiceImpl.java",
 							"function": "getChangeLogs"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-328068777.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/HealthFitness"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-05-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46"
+				],
+				"severity": "Critical",
+				"spl": "2024-05-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "200292413677519874267550763316819362021",
+							"length": 1640
+						},
+						"id": "ASB-A-328068777-0ec039df",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46",
+						"target": {
+							"file": "service/java/com/android/server/healthconnect/HealthConnectServiceImpl.java",
+							"function": "getChangeLogToken"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"28639966036122384420486418860090170562",
+								"14787195696624463574573004180146590960",
+								"124969319363793220763356686989257765174"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-328068777-417809ae",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46",
+						"target": {
+							"file": "tests/cts/src/android/healthconnect/cts/TestUtils.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"184284571166231186356303372028293059177",
+								"158277996485282816687852804984270150792",
+								"3834673447980206355777666768730623887",
+								"194253162466046725342937943237631321477",
+								"40585238822889721281949691705454247789",
+								"235783409289312975463805719829070200344",
+								"12902639167930202410359945484686747496"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-328068777-79dd6a23",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46",
+						"target": {
+							"file": "framework/java/android/health/connect/changelog/ChangeLogTokenRequest.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "11182637820034618401113751222754258203",
+							"length": 176
+						},
+						"id": "ASB-A-328068777-8a7fb9c0",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46",
+						"target": {
+							"file": "framework/java/android/health/connect/changelog/ChangeLogTokenRequest.java",
+							"function": "ChangeLogTokenRequest"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "10078778538836670793714516941865304660",
+							"length": 3125
+						},
+						"id": "ASB-A-328068777-ac40d998",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46",
+						"target": {
+							"file": "service/java/com/android/server/healthconnect/HealthConnectServiceImpl.java",
+							"function": "getChangeLogs"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"14494658264943636005532725122148944542",
+								"311715682319723511960856381299179207635",
+								"88836618091036472495080051796659547660",
+								"60912415992642674153698379516784373776",
+								"176314100490389740788039315426701052471",
+								"337595151293101171946985979025104038853",
+								"169349844471804201544675214444074849623",
+								"141976674935542803872601154376733957406",
+								"286621354561062032981567587104938068619",
+								"97602143727257462545550882966194720477",
+								"216526834470958959124533882911469572064",
+								"54993563389427816304464757331882597587"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-328068777-d2f9bdba",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd228a3e21c9c8df83bc3851736d6f4e19956e46",
+						"target": {
+							"file": "service/java/com/android/server/healthconnect/HealthConnectServiceImpl.java"
 						}
 					}
 				]

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-259942964",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:13.331760Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-259942964",
@@ -72,6 +72,84 @@
 						"id": "PUB-A-259942964-f1f1232a",
 						"match_only_versions": [
 							"13-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/189b1157bd751e9fa01e4084c91f703c8f4af642",
+						"target": {
+							"file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+							"function": "setProfileName"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-259942964.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/189b1157bd751e9fa01e4084c91f703c8f4af642"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"DoS"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"261632806508549377328375700223001763684",
+								"72071718042071190986683616560344911631",
+								"249579893198889923221703755640549339828",
+								"32977824350968205327085866770411269575",
+								"207985399631430165261605392140189796283",
+								"302998431240077100762269125275940416996",
+								"40645136330168600440795433057896396955",
+								"112184475321408415755340114980368957769"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-259942964-260ad326",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/189b1157bd751e9fa01e4084c91f703c8f4af642",
+						"target": {
+							"file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "336160652653341782677047496187658732973",
+							"length": 434
+						},
+						"id": "PUB-A-259942964-85a857f8",
+						"match_only_versions": [
+							"13"
 						],
 						"signature_type": "Function",
 						"signature_version": "v1",

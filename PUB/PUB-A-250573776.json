@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-250573776",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:11.218744Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-250573776",
@@ -83,6 +83,88 @@
 						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a1ca72224da3a87d3117e764dfea35e03f62a182",
 						"target": {
 							"file": "src/com/android/settings/privacy/EnableContentCapturePreferenceController.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-250573776.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Settings"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Settings/+/a1ca72224da3a87d3117e764dfea35e03f62a182"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"230878898972108947448676599731865036895",
+								"29929630303618403406873241733712735071",
+								"43171703898393838406260968717756894712",
+								"202220144456139908321737172207194654673",
+								"141297438035133473302776685006771028195",
+								"314980342124334971502357072826993007426",
+								"198523617367747830504737027296671495035",
+								"321352975154569528164620798525210741119",
+								"167566222161009494756955802324480295557"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-250573776-25881a26",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a1ca72224da3a87d3117e764dfea35e03f62a182",
+						"target": {
+							"file": "src/com/android/settings/privacy/EnableContentCapturePreferenceController.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "258326527094683490707070192044831391883",
+							"length": 166
+						},
+						"id": "PUB-A-250573776-f7ef60d9",
+						"match_only_versions": [
+							"13"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a1ca72224da3a87d3117e764dfea35e03f62a182",
+						"target": {
+							"file": "src/com/android/settings/privacy/EnableContentCapturePreferenceController.java",
+							"function": "getAvailabilityStatus"
 						}
 					}
 				]

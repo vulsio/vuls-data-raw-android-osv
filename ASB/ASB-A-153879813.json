@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-153879813",
-	"modified": "2024-11-06T15:39:50.772615Z",
+	"modified": "2024-10-02T23:29:45Z",
 	"published": "2020-11-01T00:00:00Z",
 	"aliases": [
 		"A-153879813",
@@ -59,9 +59,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-153879813-09ab3b44",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -112,9 +109,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-153879813-134ae616",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -129,9 +123,6 @@
 							"length": 63
 						},
 						"id": "ASB-A-153879813-1ca899ac",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -147,9 +138,6 @@
 							"length": 44
 						},
 						"id": "ASB-A-153879813-48ce92d7",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -165,9 +153,6 @@
 							"length": 43
 						},
 						"id": "ASB-A-153879813-66f07063",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -183,9 +168,6 @@
 							"length": 1612
 						},
 						"id": "ASB-A-153879813-7533ab72",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -201,9 +183,6 @@
 							"length": 420
 						},
 						"id": "ASB-A-153879813-8c518ad5",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -297,9 +276,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-153879813-91648bda",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -340,9 +316,6 @@
 							"length": 1224
 						},
 						"id": "ASB-A-153879813-96a3d553",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -372,9 +345,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-153879813-c7adc430",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -422,9 +392,6 @@
 							"length": 20
 						},
 						"id": "ASB-A-153879813-d042f902",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -440,9 +407,6 @@
 							"length": 1176
 						},
 						"id": "ASB-A-153879813-eacff4ba",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",
@@ -458,9 +422,6 @@
 							"length": 525
 						},
 						"id": "ASB-A-153879813-fdb50305",
-						"match_only_versions": [
-							"11-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/+/7e9c62996eb7009d677fee99f3b1dcad8bf49326",

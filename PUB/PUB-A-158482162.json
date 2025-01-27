@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-158482162",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:12:50.415692Z",
 	"published": "2021-06-01T00:00:00Z",
 	"aliases": [
 		"A-158482162",
@@ -32,9 +32,9 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/base/+/d8b61b515938cecd441fae16fc001f1e49274780",
 					"https://android.googlesource.com/platform/frameworks/base/+/b50cdde5f009ca1e8a548605c8b364d860110b67",
-					"https://android.googlesource.com/platform/frameworks/base/+/4ab5af1eb569a46f2117377382aac7dc6535cfc5"
+					"https://android.googlesource.com/platform/frameworks/base/+/4ab5af1eb569a46f2117377382aac7dc6535cfc5",
+					"https://android.googlesource.com/platform/frameworks/base/+/d8b61b515938cecd441fae16fc001f1e49274780"
 				],
 				"severity": "Moderate",
 				"spl": "2021-06-01",
@@ -141,6 +141,21 @@
 					{
 						"deprecated": false,
 						"digest": {
+							"function_hash": "205926663407531025753952048631687058022",
+							"length": 207
+						},
+						"id": "PUB-A-158482162-8c2462b3",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b50cdde5f009ca1e8a548605c8b364d860110b67",
+						"target": {
+							"file": "services/backup/java/com/android/server/backup/BackupManagerService.java",
+							"function": "isBackupServiceActive"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
 							"function_hash": "56334759618532062229800836102525878586",
 							"length": 377
 						},
@@ -151,6 +166,30 @@
 						"target": {
 							"file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
 							"function": "isBackupServiceEnabled"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"186080164564326707490355719243218777986",
+								"118150971760448194955935622080642738111",
+								"247670790405913324122141452034430768173",
+								"336380332919789045212109529589618755828",
+								"198173940083429911575214721846122336185",
+								"169054735968885439558149362866903830172",
+								"25299089395159407179068800657743919348",
+								"315726064545806713831328197111936543989",
+								"327949731336209550509669467922401020933"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-158482162-a903da33",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/b50cdde5f009ca1e8a548605c8b364d860110b67",
+						"target": {
+							"file": "services/backup/java/com/android/server/backup/BackupManagerService.java"
 						}
 					},
 					{

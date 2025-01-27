@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-245517503",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T06:58:03.011621Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-245517503",
@@ -51,9 +51,6 @@
 							"threshold": 0.9
 						},
 						"id": "PUB-A-245517503-8a9c91d9",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b9a94d52c59f55318e7a7d0d5f199e4a633a7782",
@@ -68,15 +65,82 @@
 							"length": 877
 						},
 						"id": "PUB-A-245517503-d71ae8b1",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b9a94d52c59f55318e7a7d0d5f199e4a633a7782",
 						"target": {
 							"file": "system/btif/src/btif_sdp_server.cc",
 							"function": "remove_sdp_record"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-245517503.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b9a94d52c59f55318e7a7d0d5f199e4a633a7782"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"ID"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "69317374448281767407281703466273494736",
+							"length": 877
+						},
+						"id": "PUB-A-245517503-05a52aa1",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b9a94d52c59f55318e7a7d0d5f199e4a633a7782",
+						"target": {
+							"file": "system/btif/src/btif_sdp_server.cc",
+							"function": "remove_sdp_record"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"234577341053979416166348750032160090373",
+								"182739720076160360690039348437213757437",
+								"223546810899335391801317515885637318194"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-245517503-7e719c07",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b9a94d52c59f55318e7a7d0d5f199e4a633a7782",
+						"target": {
+							"file": "system/btif/src/btif_sdp_server.cc"
 						}
 					}
 				]

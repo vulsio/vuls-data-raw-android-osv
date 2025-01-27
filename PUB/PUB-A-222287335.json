@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-222287335",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T06:57:57.715596Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-222287335",
@@ -29,6 +29,41 @@
 			],
 			"versions": [
 				"13-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/security/+/1be9d2754cf955011c0e0cdb32fecde8883bb6e6"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"DoS"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-222287335.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/security"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
 			],
 			"ecosystem_specific": {
 				"fixes": [

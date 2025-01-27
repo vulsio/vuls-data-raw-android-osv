@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-227207653",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:03.912946Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-227207653",
@@ -53,9 +53,6 @@
 							"threshold": 0.9
 						},
 						"id": "PUB-A-227207653-15ca8a0b",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/55f6a873458b72b99364d531e9e0cd54236f1cc1",
@@ -70,9 +67,6 @@
 							"length": 613
 						},
 						"id": "PUB-A-227207653-18a34f84",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/55f6a873458b72b99364d531e9e0cd54236f1cc1",
@@ -93,9 +87,6 @@
 							"threshold": 0.9
 						},
 						"id": "PUB-A-227207653-759353e2",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/55f6a873458b72b99364d531e9e0cd54236f1cc1",
@@ -110,15 +101,83 @@
 							"length": 613
 						},
 						"id": "PUB-A-227207653-908c9be8",
-						"match_only_versions": [
-							"13-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/55f6a873458b72b99364d531e9e0cd54236f1cc1",
 						"target": {
 							"file": "services/core/java/com/android/server/inputmethod/InputMethodManagerService.java",
 							"function": "setInputMethodWithSubtypeIdLocked"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-227207653.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/ceb9a211ec362d32ca98d7c346667370e7775b32"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "307625859859531589155261964946132188509",
+							"length": 613
+						},
+						"id": "PUB-A-227207653-31c53218",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/ceb9a211ec362d32ca98d7c346667370e7775b32",
+						"target": {
+							"file": "services/core/java/com/android/server/inputmethod/InputMethodManagerService.java",
+							"function": "setInputMethodWithSubtypeIdLocked"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"62254932137817019122658985252098018523",
+								"295964014840922994294226066991664009830",
+								"202812284309818429619527170475318128107",
+								"176704292464204913468701428427164499249"
+							],
+							"threshold": 0.9
+						},
+						"id": "PUB-A-227207653-8bbbc9ab",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/ceb9a211ec362d32ca98d7c346667370e7775b32",
+						"target": {
+							"file": "services/core/java/com/android/server/inputmethod/InputMethodManagerService.java"
 						}
 					}
 				]

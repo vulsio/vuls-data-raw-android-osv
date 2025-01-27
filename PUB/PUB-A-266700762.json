@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "PUB-A-266700762",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-29T07:13:15.990898Z",
 	"published": "2023-06-01T00:00:00Z",
 	"aliases": [
 		"A-266700762",
@@ -68,6 +68,73 @@
 						"target": {
 							"file": "service/java/com/android/server/wifi/WifiNetworkFactory.java",
 							"function": "acceptRequest"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/PUB-A-266700762.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Wifi"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2023-06-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Wifi/+/be4e652bf598831d2d8576bc601ca7dd4286ca36"
+				],
+				"severity": "Moderate",
+				"spl": "2023-06-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "312101056247928488820036140934587144301",
+							"length": 1783
+						},
+						"id": "PUB-A-266700762-422fd868",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/be4e652bf598831d2d8576bc601ca7dd4286ca36",
+						"target": {
+							"file": "service/java/com/android/server/wifi/WifiNetworkFactory.java",
+							"function": "acceptRequest"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "298646921894877777740840376430943233976",
+							"length": 2109
+						},
+						"id": "PUB-A-266700762-b49313ba",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/be4e652bf598831d2d8576bc601ca7dd4286ca36",
+						"target": {
+							"file": "service/java/com/android/server/wifi/WifiNetworkFactory.java",
+							"function": "needNetworkFor"
 						}
 					}
 				]

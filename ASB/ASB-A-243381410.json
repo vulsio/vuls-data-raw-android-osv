@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-243381410",
-	"modified": "2024-11-26T22:33:13.093992Z",
+	"modified": "2024-09-25T01:07:22Z",
 	"published": "2023-11-01T00:00:00Z",
 	"aliases": [
 		"A-243381410",
@@ -32,7 +32,8 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/av/+/50bf46a3f62136386548a9187a749936bda3ee8f"
+					"https://android.googlesource.com/platform/frameworks/av/+/50bf46a3f62136386548a9187a749936bda3ee8f",
+					"https://android.googlesource.com/platform/frameworks/av/+/24b80a252815efec8fe9ee09d27ff592ff85caf6"
 				],
 				"severity": "High",
 				"spl": "2023-11-01",
@@ -41,15 +42,18 @@
 				],
 				"vanir_signatures": [
 					{
-						"deprecated": true,
+						"deprecated": false,
 						"digest": {
-							"function_hash": "156322528856444147556699193616146441238",
-							"length": 313
+							"function_hash": "206423838537077778683672397681181193153",
+							"length": 391
 						},
-						"id": "ASB-A-243381410-2772e87d",
+						"id": "ASB-A-243381410-2f32c52c",
+						"match_only_versions": [
+							"14-next"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/av/+/50bf46a3f62136386548a9187a749936bda3ee8f",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/24b80a252815efec8fe9ee09d27ff592ff85caf6",
 						"target": {
 							"file": "media/mtp/MtpFfsHandle.cpp",
 							"function": "MtpFfsHandle::doSendEvent"
@@ -101,6 +105,104 @@
 						"source": "https://android.googlesource.com/platform/frameworks/av/+/50bf46a3f62136386548a9187a749936bda3ee8f",
 						"target": {
 							"file": "media/mtp/MtpFfsHandle.h"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"249905657129750199156804045841388941371",
+								"129944308696489498706075798586674994455",
+								"234890760846408323056785030771212952384",
+								"134081666041439078632207748534875507413",
+								"216512857860840639893639376538607433979",
+								"46630529847610189699613104430422721829",
+								"249078942686925292647122114907574201434",
+								"133086749823307041251926957468676873004",
+								"324773778986203074548926276370670423793",
+								"3218371153343959678584258994735145426",
+								"83595945529144457290875089835432754386",
+								"306231000139423576494531936526756222315",
+								"211420202275080712744550988006981160177",
+								"134173040292944580260729058122719658293",
+								"75010337608386829421480620726219757103",
+								"38375681278452947314662935039389038682",
+								"202687650483980621914080471630274682406",
+								"318938683827732062174721510769767011106",
+								"275207533668640178719217003156540494481",
+								"130923682915988071978495404433715529474"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-243381410-83b8948e",
+						"match_only_versions": [
+							"14-next"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/24b80a252815efec8fe9ee09d27ff592ff85caf6",
+						"target": {
+							"file": "media/mtp/MtpFfsHandle.cpp"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "246874845117935513973283340014045140640",
+							"length": 338
+						},
+						"id": "ASB-A-243381410-c1163542",
+						"match_only_versions": [
+							"14-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/24b80a252815efec8fe9ee09d27ff592ff85caf6",
+						"target": {
+							"file": "media/mtp/MtpFfsHandle.cpp",
+							"function": "MtpFfsHandle::sendEvent"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"287665720593271876949601279852261242653",
+								"123877190094603676257621209182778795715",
+								"304262815724805461350446928805530664552",
+								"16996758083761316092469516705013594099",
+								"9295919541600902406113267227066390217",
+								"248751862827529912028883904204990656887"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-243381410-d38f158b",
+						"match_only_versions": [
+							"14-next"
+						],
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/24b80a252815efec8fe9ee09d27ff592ff85caf6",
+						"target": {
+							"file": "media/mtp/MtpFfsHandle.h"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "69570275881886170927266215477087188399",
+							"length": 221
+						},
+						"id": "ASB-A-243381410-f1a30a43",
+						"match_only_versions": [
+							"14-next"
+						],
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/av/+/24b80a252815efec8fe9ee09d27ff592ff85caf6",
+						"target": {
+							"file": "media/mtp/MtpFfsHandle.cpp",
+							"function": "MtpFfsHandle::close"
 						}
 					},
 					{
@@ -232,6 +334,9 @@
 							"length": 313
 						},
 						"id": "ASB-A-243381410-82e1fbec",
+						"match_only_versions": [
+							"11"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/av/+/73d89318a658ece5f337c5f9c1ec1149c52eb722",
@@ -314,6 +419,9 @@
 							"length": 313
 						},
 						"id": "ASB-A-243381410-26ad8f39",
+						"match_only_versions": [
+							"12"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/av/+/e376b3dd401339cf736b1f76948b2f2338a647c9",
@@ -425,6 +533,9 @@
 							"length": 313
 						},
 						"id": "ASB-A-243381410-15013ffe",
+						"match_only_versions": [
+							"12L"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/av/+/d0645e1ca9d985acbf679ba29cc886bdd217ec55",
@@ -625,6 +736,9 @@
 							"length": 313
 						},
 						"id": "ASB-A-243381410-bba9b650",
+						"match_only_versions": [
+							"13"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/av/+/05dc1c083095ebee0faa20498153eb466082ace0",
@@ -710,6 +824,9 @@
 							"length": 313
 						},
 						"id": "ASB-A-243381410-8e6b531a",
+						"match_only_versions": [
+							"14"
+						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/av/+/e2c99e1e3a87368477f888f56944ec11c8d11a6e",

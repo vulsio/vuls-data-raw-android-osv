@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-261721900",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-09-05T15:27:09.931247Z",
 	"published": "2024-09-01T00:00:00Z",
 	"aliases": [
 		"A-261721900",
@@ -75,6 +75,230 @@
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/frameworks/base/+/737bc87e74763a073b01253cd3d9a35ccfdc0138",
+						"target": {
+							"file": "core/java/android/net/Uri.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-261721900.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/1fd0421801c391dd619cafeeea8d379a9029074a"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"104738803165679544444835421662763770740",
+								"282854974940796504727249461649251767358",
+								"193301029035352083894885517289582284355",
+								"189082287069262779762421083968669274300"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-261721900-080ac756",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/1fd0421801c391dd619cafeeea8d379a9029074a",
+						"target": {
+							"file": "core/java/android/net/Uri.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-261721900.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/191944ece5badb3e85969b3ccb9baebd6abb622b"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"104738803165679544444835421662763770740",
+								"282854974940796504727249461649251767358",
+								"193301029035352083894885517289582284355",
+								"189082287069262779762421083968669274300"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-261721900-83f2df85",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/191944ece5badb3e85969b3ccb9baebd6abb622b",
+						"target": {
+							"file": "core/java/android/net/Uri.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-261721900.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/841ce92aa1b350c83148ef6fb57bfff617364e1a"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"104738803165679544444835421662763770740",
+								"282854974940796504727249461649251767358",
+								"193301029035352083894885517289582284355",
+								"189082287069262779762421083968669274300"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-261721900-d486625f",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/841ce92aa1b350c83148ef6fb57bfff617364e1a",
+						"target": {
+							"file": "core/java/android/net/Uri.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-261721900.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2024-09-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/557941ca0cf59da66db4fad12c2139ce80922f4a"
+				],
+				"severity": "High",
+				"spl": "2024-09-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"104738803165679544444835421662763770740",
+								"282854974940796504727249461649251767358",
+								"193301029035352083894885517289582284355",
+								"189082287069262779762421083968669274300"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-261721900-b555d6c2",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/557941ca0cf59da66db4fad12c2139ce80922f4a",
 						"target": {
 							"file": "core/java/android/net/Uri.java"
 						}

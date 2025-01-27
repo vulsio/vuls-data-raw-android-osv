@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-235098883",
-	"modified": "2024-11-06T12:16:03.231308Z",
+	"modified": "2024-08-07T19:30:13.120177Z",
 	"published": "2022-11-01T00:00:00Z",
 	"aliases": [
 		"A-235098883",
@@ -467,6 +467,124 @@
 							"length": 211
 						},
 						"id": "ASB-A-235098883-db64cde6",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/735b84a90e5305915836329d4abca672fcc87126",
+						"target": {
+							"file": "src/com/android/server/telecom/CallsManager.java",
+							"function": "loggedRun"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-235098883.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/services/Telecomm"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "13:0"
+						},
+						{
+							"fixed": "13:2022-11-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"13"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/services/Telecomm/+/735b84a90e5305915836329d4abca672fcc87126"
+				],
+				"severity": "High",
+				"spl": "2022-11-01",
+				"types": [
+					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "56996565309622859199760986891345043267",
+							"length": 211
+						},
+						"id": "ASB-A-235098883-46317b98",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/735b84a90e5305915836329d4abca672fcc87126",
+						"target": {
+							"file": "src/com/android/server/telecom/CallsManager.java",
+							"function": "loggedRun"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"90318205065606561043884690310810845677",
+								"5796137444434912928138706482082313920",
+								"49476044142096104189746131419820537579",
+								"126291089231107155096707050100944468383",
+								"250733354817558946597434227752831285804",
+								"323029196704237783690810370671001093584",
+								"56609536568271248166245200469451222536",
+								"246107628532541466110725314629604045334",
+								"75637455373044755721658173082363347420",
+								"183612808229199593950615287424797619157",
+								"120554692771712425450164883798148210965",
+								"216753325627485995622306550072138495563",
+								"310419024130454413646494475091772126323",
+								"128375389671755078266861537160023294952",
+								"163232583368852320667111453582922645589",
+								"14284280858149685098989265174006597933",
+								"17569772172361472032489349891596062196",
+								"309870465881777670000889058642353937880",
+								"202637388650123876466385843878974427368",
+								"186030785590081878932242815522794011201",
+								"130567286403321222431699522616763289847"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-235098883-5504693d",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/735b84a90e5305915836329d4abca672fcc87126",
+						"target": {
+							"file": "src/com/android/server/telecom/CallsManager.java"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "304563262180663244574201306052709331678",
+							"length": 3065
+						},
+						"id": "ASB-A-235098883-89c09440",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/735b84a90e5305915836329d4abca672fcc87126",
+						"target": {
+							"file": "src/com/android/server/telecom/CallsManager.java",
+							"function": "onCallRedirectionComplete"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "136016856945005241622357145227811723443",
+							"length": 129
+						},
+						"id": "ASB-A-235098883-e2817f25",
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/services/Telecomm/+/735b84a90e5305915836329d4abca672fcc87126",

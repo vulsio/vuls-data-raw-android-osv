@@ -1,8 +1,8 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-156260178",
-	"modified": "2024-11-06T12:16:03.231308Z",
-	"published": "2021-04-01T00:00:00Z",
+	"modified": "2024-08-07T19:29:24.294300Z",
+	"published": "2021-02-01T00:00:00Z",
 	"aliases": [
 		"A-156260178",
 		"CVE-2021-0338"
@@ -22,7 +22,7 @@
 							"introduced": "10:0"
 						},
 						{
-							"fixed": "10:2021-04-01"
+							"fixed": "10:2021-02-01"
 						}
 					]
 				}
@@ -32,11 +32,10 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/base/+/9af8c6364f34c7d7be6c6dff23d3b7052c0a914d",
-					"https://android.googlesource.com/platform/frameworks/base/+/c0b28414d5cd686bf621fd71978699ec28177b21"
+					"https://android.googlesource.com/platform/frameworks/base/+/9af8c6364f34c7d7be6c6dff23d3b7052c0a914d"
 				],
 				"severity": "High",
-				"spl": "2021-04-01",
+				"spl": "2021-02-01",
 				"types": [
 					"DoS"
 				],
@@ -83,25 +82,6 @@
 							"file": "core/java/android/provider/Settings.java",
 							"function": "validate"
 						}
-					},
-					{
-						"deprecated": false,
-						"digest": {
-							"line_hashes": [
-								"131446792946870586410099568789078881770",
-								"229904743708054460017553334581969445316",
-								"256802574226784769048985419266188794549",
-								"321440769944822451695349069336164785601"
-							],
-							"threshold": 0.9
-						},
-						"id": "ASB-A-156260178-e8407449",
-						"signature_type": "Line",
-						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/base/+/c0b28414d5cd686bf621fd71978699ec28177b21",
-						"target": {
-							"file": "core/java/android/provider/Settings.java"
-						}
 					}
 				]
 			},
@@ -122,7 +102,7 @@
 							"introduced": "11:0"
 						},
 						{
-							"fixed": "11:2021-04-01"
+							"fixed": "11:2021-02-01"
 						}
 					]
 				}
@@ -132,34 +112,14 @@
 			],
 			"ecosystem_specific": {
 				"fixes": [
-					"https://android.googlesource.com/platform/frameworks/base/+/3d79b643d4e566d16f7a0338d7d6934f6ca7317e",
-					"https://android.googlesource.com/platform/frameworks/base/+/9b6c0faca38117dcc75ee1763f5488c9d92e4375"
+					"https://android.googlesource.com/platform/frameworks/base/+/3d79b643d4e566d16f7a0338d7d6934f6ca7317e"
 				],
 				"severity": "High",
-				"spl": "2021-04-01",
+				"spl": "2021-02-01",
 				"types": [
 					"DoS"
 				],
 				"vanir_signatures": [
-					{
-						"deprecated": false,
-						"digest": {
-							"line_hashes": [
-								"208361742969482442656897303130975103793",
-								"88033662250478188653767585812501993675",
-								"80459140124680687891152890280173852381",
-								"296142098242053812512986333234944153384"
-							],
-							"threshold": 0.9
-						},
-						"id": "ASB-A-156260178-01c6229c",
-						"signature_type": "Line",
-						"signature_version": "v1",
-						"source": "https://android.googlesource.com/platform/frameworks/base/+/9b6c0faca38117dcc75ee1763f5488c9d92e4375",
-						"target": {
-							"file": "packages/SettingsProvider/src/android/provider/settings/validators/SystemSettingsValidators.java"
-						}
-					},
 					{
 						"deprecated": false,
 						"digest": {
@@ -197,7 +157,7 @@
 	"references": [
 		{
 			"type": "ADVISORY",
-			"url": "https://source.android.com/security/bulletin/2021-04-01"
+			"url": "https://source.android.com/security/bulletin/2021-02-01"
 		},
 		{
 			"type": "FIX",
