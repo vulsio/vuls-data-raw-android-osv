@@ -1,13 +1,13 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-283101289",
-	"modified": "2024-11-06T12:16:03.231308Z",
-	"published": "2023-10-01T00:00:00Z",
+	"modified": "2025-02-06T00:27:17.287684Z",
+	"published": "2025-02-01T00:00:00Z",
 	"aliases": [
 		"A-283101289",
 		"CVE-2023-40134"
 	],
-	"details": "In isFullScreen of FillUi.java, there is a possible way to view another user's images due to a confused deputy. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+	"details": "In FillUi of FillUi.java, there is a possible way to view another users images. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
 		{
 			"package": {
@@ -19,23 +19,23 @@
 					"type": "ECOSYSTEM",
 					"events": [
 						{
-							"introduced": "14-next:0"
+							"introduced": "15-next:0"
 						},
 						{
-							"fixed": "14-next:2023-10-01"
+							"fixed": "15-next:2025-02-01"
 						}
 					]
 				}
 			],
 			"versions": [
-				"14-next"
+				"15-next"
 			],
 			"ecosystem_specific": {
 				"fixes": [
 					"https://android.googlesource.com/platform/frameworks/base/+/bf7fbbccd920596e514d1559fb3feaca70e55e78"
 				],
 				"severity": "High",
-				"spl": "2023-10-01",
+				"spl": "2025-02-01",
 				"types": [
 					"ID"
 				],
@@ -244,7 +244,7 @@
 							"introduced": "12:0"
 						},
 						{
-							"fixed": "12:2023-10-01"
+							"fixed": "12:2025-02-01"
 						}
 					]
 				}
@@ -257,7 +257,7 @@
 					"https://android.googlesource.com/platform/frameworks/base/+/73fa082a7202100da107ae14dd7742ecd86da053"
 				],
 				"severity": "High",
-				"spl": "2023-10-01",
+				"spl": "2025-02-01",
 				"types": [
 					"ID"
 				],
@@ -387,7 +387,7 @@
 							"introduced": "12L:0"
 						},
 						{
-							"fixed": "12L:2023-10-01"
+							"fixed": "12L:2025-02-01"
 						}
 					]
 				}
@@ -400,7 +400,7 @@
 					"https://android.googlesource.com/platform/frameworks/base/+/f7ca136c514dc975c3f46d95c53fd6b3752c577a"
 				],
 				"severity": "High",
-				"spl": "2023-10-01",
+				"spl": "2025-02-01",
 				"types": [
 					"ID"
 				],
@@ -530,7 +530,7 @@
 							"introduced": "13:0"
 						},
 						{
-							"fixed": "13:2023-10-01"
+							"fixed": "13:2025-02-01"
 						}
 					]
 				}
@@ -543,7 +543,7 @@
 					"https://android.googlesource.com/platform/frameworks/base/+/93810ba1c0a4d31f49adbf9454731e2b7defdfc0"
 				],
 				"severity": "High",
-				"spl": "2023-10-01",
+				"spl": "2025-02-01",
 				"types": [
 					"ID"
 				],
@@ -742,7 +742,7 @@
 	"references": [
 		{
 			"type": "ADVISORY",
-			"url": "https://source.android.com/security/bulletin/2023-10-01"
+			"url": "https://source.android.com/security/bulletin/2025-02-01"
 		},
 		{
 			"type": "FIX",
