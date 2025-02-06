@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-193031925",
-	"modified": "2025-01-13T21:12:08.569035Z",
+	"modified": "2025-02-06T03:59:26Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-193031925",
@@ -9,6 +9,114 @@
 	],
 	"details": "In multiple functions of ConnectivityService.java, there is a possible way for a Wi-Fi AP to determine what site a device has connected to through a VPN due to side channel information disclosure. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Connectivity"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Connectivity/+/9a0a647f50dde062bb0846a87961607b4ca1c4c8",
+					"https://android.googlesource.com/platform/packages/modules/Connectivity/+/f0fa3a4554393018b0fcab937ff0013a1829a69b"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Connectivity"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Connectivity/+/9a0a647f50dde062bb0846a87961607b4ca1c4c8",
+					"https://android.googlesource.com/platform/packages/modules/Connectivity/+/f0fa3a4554393018b0fcab937ff0013a1829a69b"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/libs/net"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "14:0"
+						},
+						{
+							"fixed": "14:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"14"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/libs/net/+/03eb6f09360de988687c06940b6f13be7e650b34",
+					"https://android.googlesource.com/platform/frameworks/libs/net/+/80500a3de46b212c7ed0e9f9f9c87f698b101c17"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"ID"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
+			}
+		},
 		{
 			"package": {
 				"ecosystem": "Android",
@@ -129,9 +237,6 @@
 							"length": 972
 						},
 						"id": "ASB-A-193031925-612a840a",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
@@ -190,9 +295,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-193031925-8d6e9489",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
@@ -385,6 +487,38 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/frameworks/libs/net/+/e72c61380c52a4450970556e5936c5ec03fd66fb"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/frameworks/libs/net/+/b20d67cbfc24a54dfe1dc9854bac61fdf52f7913"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/1a0dd8ccde71c2252132d60e5b897fa2f569cc76"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/4e80ab9ca5b9e7db8185cdde240ab0f01a2c0611"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/de7b97573ac92be4cff6ca71a1837b2fe0dcbbab"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/c16addaec604d724cf5296f89e606d558128d0cc"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d5d5e5749316d31a63b9b8b132e273d29364401b"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/9eb0da27c4ecff37f7b6d2328b8dee6ba766ad1a"
 		}
 	]
 }

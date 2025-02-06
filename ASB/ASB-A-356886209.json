@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-356886209",
-	"modified": "2025-01-13T21:12:09.391421Z",
+	"modified": "2025-02-06T03:24:14Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-356886209",
@@ -9,6 +9,146 @@
 	],
 	"details": "In build_read_multi_rsp of gatt_sr.cc, there is a possible denial of service due to a logic error in the code. This could lead to remote (proximal/adjacent) denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15-next:0"
+						},
+						{
+							"fixed": "15-next:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15-next"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/298fdca3f2700432e30c2a1fdfec6f93af453dd8"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"DoS"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-356886209.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/5ac236a6e8642a5b7d69b0b2677397c02f122f15"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"DoS"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-356886209.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/5ac236a6e8642a5b7d69b0b2677397c02f122f15"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"DoS"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-356886209.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/298fdca3f2700432e30c2a1fdfec6f93af453dd8"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"DoS"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-356886209.json"
+			}
+		},
 		{
 			"package": {
 				"ecosystem": "Android",
@@ -156,6 +296,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/ec76dc86a8e9a7c084abde140356d024c94109d3"
 		}
 	]
 }

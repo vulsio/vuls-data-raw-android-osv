@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-364027949",
-	"modified": "2025-01-13T21:12:09.845318Z",
+	"modified": "2025-02-06T03:35:59Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-364027949",
@@ -75,9 +75,6 @@
 							"length": 1324
 						},
 						"id": "ASB-A-364027949-3827c5ea",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7de5617f7d5266fe57c990c428621b5d4e92728a",
@@ -140,6 +137,111 @@
 		{
 			"package": {
 				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/7e5f45df8880293e1ab40367670d1a8959a542f9"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-364027949.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/7e5f45df8880293e1ab40367670d1a8959a542f9"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-364027949.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/84ea459acaf3c6e7215e044e59dc3e9187f1f7b8"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-364027949.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
 				"name": "platform/packages/modules/Bluetooth"
 			},
 			"ranges": [
@@ -166,6 +268,96 @@
 				"spl": "2025-01-01",
 				"types": [
 					"RCE"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "59907721387275796891791880982636164831",
+							"length": 1709
+						},
+						"id": "ASB-A-364027949-80714ab1",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_read_by_type_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "268512766584913294539741796509741126456",
+							"length": 1013
+						},
+						"id": "ASB-A-364027949-83af7302",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_find_info"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "10210466590019957247735252267736265287",
+							"length": 1228
+						},
+						"id": "ASB-A-364027949-a0478448",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_read_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"196188171440176825939806200179255172593",
+								"1343846276710123130481317655775445976",
+								"162707953477914375301304852354564105157",
+								"237632184094319759594373126038928156",
+								"73412303094902604806141279010004724322",
+								"213793042301422949472188878356196466428",
+								"274459867152185406121724678773523115431",
+								"192696816679659929020304638215736036804",
+								"133504366274441222416588714725015718987",
+								"21203466509074868465527884809617529072",
+								"194708559555065354067195318099669152827",
+								"318666791156319226780322955888919039055",
+								"244954544663744206864763512961316080849"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-364027949-ab8983b1",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "295457614205376007172365195382679517796",
+							"length": 1372
+						},
+						"id": "ASB-A-364027949-b03cbff8",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_primary_service_req"
+						}
+					}
 				]
 			},
 			"database_specific": {
@@ -201,6 +393,96 @@
 				"spl": "2025-01-01",
 				"types": [
 					"RCE"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"196188171440176825939806200179255172593",
+								"1343846276710123130481317655775445976",
+								"162707953477914375301304852354564105157",
+								"237632184094319759594373126038928156",
+								"73412303094902604806141279010004724322",
+								"213793042301422949472188878356196466428",
+								"274459867152185406121724678773523115431",
+								"192696816679659929020304638215736036804",
+								"133504366274441222416588714725015718987",
+								"21203466509074868465527884809617529072",
+								"194708559555065354067195318099669152827",
+								"318666791156319226780322955888919039055",
+								"244954544663744206864763512961316080849"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-364027949-191eca3b",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "10210466590019957247735252267736265287",
+							"length": 1228
+						},
+						"id": "ASB-A-364027949-44e14824",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_read_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "268512766584913294539741796509741126456",
+							"length": 1013
+						},
+						"id": "ASB-A-364027949-4638b31c",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_find_info"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "59907721387275796891791880982636164831",
+							"length": 1709
+						},
+						"id": "ASB-A-364027949-ace40604",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_read_by_type_req"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "295457614205376007172365195382679517796",
+							"length": 1372
+						},
+						"id": "ASB-A-364027949-c96609ee",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2fc3087b9ac3019518c6ceb8a64d181d6bb04907",
+						"target": {
+							"file": "system/stack/gatt/gatt_sr.cc",
+							"function": "gatts_process_primary_service_req"
+						}
+					}
 				]
 			},
 			"database_specific": {
@@ -212,6 +494,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/c7468e64bb5e821563a910ccd8e5693c179c9da4"
 		}
 	]
 }

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-323850943",
-	"modified": "2025-01-13T21:12:09.098719Z",
+	"modified": "2025-02-06T03:16:57Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-323850943",
@@ -52,9 +52,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-323850943-1b068b74",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/cad927034a371b82a4a07a16ec442eb261f6153f",
@@ -73,9 +70,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-323850943-727979f1",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/cad927034a371b82a4a07a16ec442eb261f6153f",
@@ -90,9 +84,6 @@
 							"length": 2004
 						},
 						"id": "ASB-A-323850943-778d3873",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/cad927034a371b82a4a07a16ec442eb261f6153f",
@@ -101,6 +92,111 @@
 							"function": "build_read_multi_rsp"
 						}
 					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-323850943.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/c177fdbd6189a114239e11e2713740b5a50624e1"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-323850943.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/c177fdbd6189a114239e11e2713740b5a50624e1"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-323850943.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2b68d81a761d1f92625a5cd29ddb458fcdb46f52"
+				],
+				"severity": "Critical",
+				"spl": "2025-01-01",
+				"types": [
+					"RCE"
 				]
 			},
 			"database_specific": {
@@ -164,9 +260,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-323850943-912ba8bd",
-						"match_only_versions": [
-							"13"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/e5ab6c617683a00c4e2996f1bc15c4c6e7f70f48",
@@ -186,9 +279,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-323850943-dddab008",
-						"match_only_versions": [
-							"13"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/e5ab6c617683a00c4e2996f1bc15c4c6e7f70f48",
@@ -244,9 +334,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-323850943-3097b1ae",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/e5ab6c617683a00c4e2996f1bc15c4c6e7f70f48",
@@ -281,9 +368,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-323850943-e1ee1b50",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/e5ab6c617683a00c4e2996f1bc15c4c6e7f70f48",
@@ -302,6 +386,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/bfe316cf9f026d5b48bcfb2f457685b537baa9a3"
 		}
 	]
 }

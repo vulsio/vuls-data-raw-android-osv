@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-371975420",
-	"modified": "2025-01-13T21:12:10.277456Z",
+	"modified": "2025-02-06T03:44:10Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-371975420",
@@ -38,6 +38,115 @@
 				"spl": "2025-01-01",
 				"types": [
 					"EoP"
+				],
+				"vanir_signatures": [
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "325547799349776628956852058422162887335",
+							"length": 86
+						},
+						"id": "ASB-A-371975420-645622a5",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/7e5e47611d6f3271df264bb8ca9545ca3ba80361",
+						"target": {
+							"file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java",
+							"function": "enablePermissionsSync"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "325547799349776628956852058422162887335",
+							"length": 86
+						},
+						"id": "ASB-A-371975420-8c5fec4b",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/7e5e47611d6f3271df264bb8ca9545ca3ba80361",
+						"target": {
+							"file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java",
+							"function": "disablePermissionsSync"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"function_hash": "184969778027347715404234350735920144006",
+							"length": 93
+						},
+						"id": "ASB-A-371975420-aee88cd6",
+						"signature_type": "Function",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/7e5e47611d6f3271df264bb8ca9545ca3ba80361",
+						"target": {
+							"file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java",
+							"function": "getPermissionSyncRequest"
+						}
+					},
+					{
+						"deprecated": false,
+						"digest": {
+							"line_hashes": [
+								"31383610075177406818730483972757974460",
+								"94427483219342024353394234258568613019",
+								"279611850105123945749576903241054973737",
+								"295091891336711870713095889099124920231",
+								"293290536639458632448642867313917577954",
+								"115179478063496338277254319452012577918",
+								"100729554523683161047881112879348806003",
+								"140040083095464383787596444328554164057",
+								"18538333375630601579707101631068815489",
+								"284039753809038667627430981028587418684",
+								"304070470983574557448026563449469075677",
+								"30304423151255348775357260736044561574"
+							],
+							"threshold": 0.9
+						},
+						"id": "ASB-A-371975420-cc29bf53",
+						"signature_type": "Line",
+						"signature_version": "v1",
+						"source": "https://android.googlesource.com/platform/frameworks/base/+/7e5e47611d6f3271df264bb8ca9545ca3ba80361",
+						"target": {
+							"file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+						}
+					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-371975420.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/frameworks/base"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/frameworks/base/+/08f57da9e39869f696de4225197530aa2b9187e8"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
 				]
 			},
 			"database_specific": {
@@ -49,6 +158,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/frameworks/base/+/076a97aa32492cc44e863f7ab75494dc0b3bf5ef"
 		}
 	]
 }

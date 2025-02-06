@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-340480881",
-	"modified": "2025-01-13T21:12:09.160620Z",
+	"modified": "2025-02-06T03:52:38Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-340480881",
@@ -78,9 +78,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-340480881-d7a46498",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/modules/Permission/+/46abb4e1fd365a88efdfe3f2b1f87da4d255b41b",
@@ -153,6 +150,41 @@
 			"ecosystem_specific": {
 				"fixes": [
 					"https://android.googlesource.com/platform/packages/modules/Permission/+/2bf7a6ef16585b120dfeee6e4f701be62525ee12"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-340480881.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/modules/Permission"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/modules/Permission/+/111cac570a0f596cdca1b1d512dfbef17751e1a5"
 				],
 				"severity": "High",
 				"spl": "2025-01-01",
@@ -311,6 +343,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Permission/+/ea7b26fe98c142d0a87d61c3a1c82335ea29c6d2"
 		}
 	]
 }

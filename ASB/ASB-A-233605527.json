@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-233605527",
-	"modified": "2025-01-13T21:12:08.793248Z",
+	"modified": "2025-02-06T03:52:38Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-233605527",
@@ -56,9 +56,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-7bc0b080",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
@@ -73,9 +70,6 @@
 							"length": 1314
 						},
 						"id": "ASB-A-233605527-7de0e05e",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
@@ -110,9 +104,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-bd84f76c",
-						"match_only_versions": [
-							"15-next"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
@@ -173,9 +164,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-0a4657b4",
-						"match_only_versions": [
-							"12"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
@@ -190,9 +178,6 @@
 							"length": 1314
 						},
 						"id": "ASB-A-233605527-615cedc0",
-						"match_only_versions": [
-							"12"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
@@ -212,9 +197,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-819591f4",
-						"match_only_versions": [
-							"12"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
@@ -285,9 +267,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-1a673a0e",
-						"match_only_versions": [
-							"12L"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
@@ -302,9 +281,6 @@
 							"length": 1314
 						},
 						"id": "ASB-A-233605527-2e65bd43",
-						"match_only_versions": [
-							"12L"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
@@ -344,9 +320,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-add44acb",
-						"match_only_versions": [
-							"12L"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
@@ -354,6 +327,41 @@
 							"file": "src/com/android/documentsui/picker/ConfirmFragment.java"
 						}
 					}
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-233605527.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/DocumentsUI"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "15:0"
+						},
+						{
+							"fixed": "15:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"15"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/5178a952e18ee66f1b3c14796708d0d60058a157"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
 				]
 			},
 			"database_specific": {
@@ -444,9 +452,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-4d7a7b44",
-						"match_only_versions": [
-							"13"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
@@ -461,9 +466,6 @@
 							"length": 1314
 						},
 						"id": "ASB-A-233605527-bb4d4a70",
-						"match_only_versions": [
-							"13"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
@@ -516,9 +518,6 @@
 							"length": 1314
 						},
 						"id": "ASB-A-233605527-0334497b",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Function",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
@@ -580,9 +579,6 @@
 							"threshold": 0.9
 						},
 						"id": "ASB-A-233605527-a9cfcd31",
-						"match_only_versions": [
-							"14"
-						],
 						"signature_type": "Line",
 						"signature_version": "v1",
 						"source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
@@ -601,6 +597,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/6a1dd25117d5406d3befe404335202623778736a"
 		}
 	]
 }
