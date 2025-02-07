@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "ASB-A-308429049",
-	"modified": "2025-01-13T21:12:08.941180Z",
+	"modified": "2025-02-06T19:02:37Z",
 	"published": "2025-01-01T00:00:00Z",
 	"aliases": [
 		"A-308429049",
@@ -9,6 +9,146 @@
 	],
 	"details": "In multiple locations, there is a possible bypass of user consent to enabling new Bluetooth HIDs due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
 	"affected": [
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Bluetooth/+/5fc87e65eb3d70f051e2902d3e81ce6587ab1a96"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-308429049.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12:0"
+						},
+						{
+							"fixed": "12:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/18c635ad7923f5c26d6cd4cf7f7c66b2fa02462b"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-308429049.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/packages/apps/Bluetooth"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/packages/apps/Bluetooth/+/5fc87e65eb3d70f051e2902d3e81ce6587ab1a96"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-308429049.json"
+			}
+		},
+		{
+			"package": {
+				"ecosystem": "Android",
+				"name": "platform/system/bt"
+			},
+			"ranges": [
+				{
+					"type": "ECOSYSTEM",
+					"events": [
+						{
+							"introduced": "12L:0"
+						},
+						{
+							"fixed": "12L:2025-01-01"
+						}
+					]
+				}
+			],
+			"versions": [
+				"12L"
+			],
+			"ecosystem_specific": {
+				"fixes": [
+					"https://android.googlesource.com/platform/system/bt/+/18c635ad7923f5c26d6cd4cf7f7c66b2fa02462b"
+				],
+				"severity": "High",
+				"spl": "2025-01-01",
+				"types": [
+					"EoP"
+				]
+			},
+			"database_specific": {
+				"source": "https://storage.googleapis.com/android-osv/ASB-A-308429049.json"
+			}
+		},
 		{
 			"package": {
 				"ecosystem": "Android",
@@ -709,6 +849,7 @@
 							"function_hash": "89242460328368372892104077634764793122",
 							"length": 1417
 						},
+						"exact_target_file_match_only": true,
 						"id": "ASB-A-308429049-d01f9794",
 						"signature_type": "Function",
 						"signature_version": "v1",
@@ -800,6 +941,10 @@
 		{
 			"type": "ADVISORY",
 			"url": "https://source.android.com/security/bulletin/2025-01-01"
+		},
+		{
+			"type": "FIX",
+			"url": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/9529bb85c051596d8cc34ddac5fd5318e9b6d009"
 		}
 	]
 }
